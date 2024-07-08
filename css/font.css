@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* LINESeedKR */
+@font-face {
+  font-family: 'Line Seed KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('font/LINESeedKR-Th.eot');
+  src: local('Line Seed KR Th'), local('LineSeedKR-Th'),
+    url('font/LINESeedKR-Th.woff2') format('woff2'),
+    url('font/LINESeedKR-Th.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Line Seed KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('font/LINESeedKR-Rg.eot');
+  src: local('Line Seed KR Rg'), local('LineSeedKR-Rg'),
+    url('font/LINESeedKR-Rg.woff2') format('woff2'),
+    url('font/LINESeedKR-Rg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Line Seed KR';
+  font-style: normal;
+  font-weight: 800;
+  src: url('font/LINESeedKR-Bd.eot');
+  src: local('Line Seed KR Bd'), local('LineSeedKR-Bd'),
+    url('font/LINESeedKR-Bd.woff2') format('woff2'),
+    url('font/LINESeedKR-Bd.woff') format('woff');
+}

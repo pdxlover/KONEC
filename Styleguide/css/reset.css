@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body, h5, button.btn-popup{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+img{vertical-align: top; border: 0;}
+li{list-style:none}
+a{text-decoration: none; color: #333;}
+
+input{vertical-align: top;}
+input[type=radio]{border-radius:0px 0px; -webkit-border-radius: 50%;}
+input[type=radio]:checked{background-color:#363636;}
+input,button,textarea,select,table{box-sizing: border-box;}
+input,button,textarea,select{border-radius:0; box-sizing: border-box;}
+label,button{cursor:pointer}
+label{position: relative; white-space: nowrap;}
+
+.popup_wrap, 
+.popup-btn button.btn-yes, 
+.popup-btn button.btn-no, 
+.popup-btn button.btn-ok,
+button
+{
+  font-family: 'LINESeedKR-Bd';
+}
+
+
+
+
+

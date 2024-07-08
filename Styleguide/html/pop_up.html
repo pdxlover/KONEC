@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Up</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="tab_menu">
+      <div class="tit-logo"><h4>WEB UI Styleguide</h4></div><!--.tit-logo-->
+      <ul>
+        <li>
+          <a href="#">Rule Guide</a>
+            <ul class="depth2">
+              <li><a href="name_rule.html">네임 작성규칙</a></li>
+              <li><a href="folder.html">폴더 구조</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Component</a>
+          <ul class="depth2">
+            <li><a href="font.html">Font</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="dropdown_list.html">Dropdown List</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="pop_up.html" class="focus">Pop Up</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Page List</a>
+          <ul class="depth2">
+            <li><a href="login.html">로그인 & 메인화면</a></li>
+            <li><a href="system.html">시스템관리</a></li>
+            <li><a href="motor.html">MOTOR 제품포장관리</a></li>
+            <li><a href="inverter.html">INVERTER 제품포장관리</a></li>
+            <li><a href="mornitering.html">모니터링</a></li>
+            <li><a href="admin.html">관리자메뉴</a></li>
+          </ul> 
+        </li>
+      </ul>
+    </div><!--.tab_menu-->
+
+    <!--팝업 콘텐츠 시작-->
+    <div id="content">
+      <div id="pop_up" class="cont">
+          <h1>Pop Up</h1>
+          <dl>
+            <dt>Pop Up</dt>
+            <dd>팝업창의 아이콘 모양에 따라 내용을 달리 표현 하였으며, 타이틀에 따라 폰트 굵기를 다르게 사용합니다.</dd>
+          </dl>
+
+          <div id="content-wrap">
+            <div class="top-cont">
+              <div class="content_box pop_up">
+                <div class="content01">
+                  <h5>질문 Question</h5>
+                  <span class="cont_txt">상태에 따른 아이콘과 타이틀에 따라 두가지 폰트 굵기로 구분합니다.</span>
+                  <div class="popup_wrap">
+                  <div class="btn_box">
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-03"><span>더블 타이틀 <br> Click Me! </span></button>
+                    </div>
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-09"><span>타이틀 <br> Click Me! </span></button>
+                    </div>
+                  </div><!--.btn-box-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-03">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt"><span>	&#91;Title&#93; </span>title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                            <div class="popup-con_wrap">
+                                <div class="popup-icon">아이콘</div><!--.popup-icon-->
+                                <div class="popup-txt">
+                                    <span class="pop_txt2">Placeholder text</span>
+                                </div><!--.popup-txt-->
+                            </div><!--.popup-con_wrap-->
+                            <div class="popup-btn">
+                              <button class="btn btn-yes">YES</button>
+                              <button class="btn btn-no">NO</button>
+                          </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                      </div><!--.popup-layer-->
+                    </div><!--.popup reset-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-09">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt">title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                            <div class="popup-con_wrap">
+                                <div class="popup-icon">아이콘</div><!--.popup-icon-->
+                                <div class="popup-txt">
+                                    <span class="pop_txt2">Placeholder text</span>
+                                </div><!--.popup-txt-->
+                            </div><!--.popup-con_wrap-->
+                            <div class="popup-btn">
+                              <button class="btn btn-yes">YES</button>
+                              <button class="btn btn-no">NO</button>
+                          </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                      </div><!--.popup-layer-->
+                    </div><!--.popup reset-->
+                  </div><!--.popup_wrap-->
+                </div><!--.content01-->
+              </div><!--.content_box-->
+
+              <div class="content_box pop_up">
+                <div class="content02">
+                    <h5>오류/경고 Error/Warnning</h5>
+                    <span class="cont_txt">상태에 따른 아이콘과 타이틀에 따라 두가지 폰트 굵기로 구분합니다.</span>
+                    <div class="popup_wrap">
+                      <div class="btn_box">
+                        <div class="btn btn-pop">
+                          <button type='button' class="btn-popup" data-pop="#layerpopup-01"><span>더블 타이틀 <br> Click Me! </span></button>
+                        </div>
+                        <div class="btn btn-pop">
+                          <button type='button' class="btn-popup" data-pop="#layerpopup-07"><span>타이틀 <br> Click Me! </span></button>
+                        </div>
+                      </div><!--.btn-box-->
+                      <!--팝업 구조-->
+                      <div class="popup reset" id="layerpopup-01">
+                        <div class="popup-layer">
+                            <div class="popup-title">
+                                <p class="pop_txt"><span>	&#91;Title&#93; </span>title</p>
+                                <a href="#" class="popup-close"></a>
+                            </div><!--.popup-title-->
+                            <div class="popup-con">
+                                <div class="popup-con_wrap">
+                                    <div class="popup-icon">아이콘</div><!--.popup-icon-->
+                                    <div class="popup-txt">
+                                        <span class="pop_txt2">Placeholder text</span>
+                                    </div><!--.popup-txt-->
+                                </div><!--.popup-con_wrap-->
+                                <div class="popup-btn">
+                                  <button class="btn btn-ok">OK</button>
+                              </div><!--.popup-btn-->
+                            </div><!--.popup-con-->
+                          </div><!--.popup-layer-->
+                        </div><!--.popup reset-->
+                        <!--팝업 구조-->
+                      <div class="popup reset" id="layerpopup-07">
+                        <div class="popup-layer">
+                            <div class="popup-title">
+                                <p class="pop_txt">Title</p>
+                                <a href="#" class="popup-close"></a>
+                            </div><!--.popup-title-->
+                            <div class="popup-con">
+                                <div class="popup-con_wrap">
+                                    <div class="popup-icon">아이콘</div><!--.popup-icon-->
+                                    <div class="popup-txt">
+                                        <span class="pop_txt2">Placeholder text</span>
+                                    </div><!--.popup-txt-->
+                                </div><!--.popup-con_wrap-->
+                                <div class="popup-btn">
+                                  <button class="btn btn-ok">OK</button>
+                              </div><!--.popup-btn-->
+                            </div><!--.popup-con-->
+                          </div><!--.popup-layer-->
+                        </div><!--.popup reset-->
+                      </div><!--.popup_wrap-->
+                  </div><!--.content02-->
+                </div><!--.content_box-->
+
+            </div><!--.top-cont-->
+          </div><!--#content-wrap-->
+
+
+          <!--일반, 실패 팝업 시작-->
+          <div class="bottom-cont">
+            <div class="content_box pop_up">
+              <div class="content03">
+                <h5>일반 팝업 No Icon</h5>
+                <span class="cont_txt">일반 팝업은 아이콘이 없습니다.</span>
+                <div class="popup_wrap">
+                  <div class="btn_box">
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-04"><span>더블 타이틀 <br> Click Me! </span></button>
+                    </div>
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-10"><span>타이틀 <br> Click Me! </span></button>
+                    </div>
+                  </div><!--.btn-box-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-04">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt"><span>&#91;Title&#93;</span>title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                            <div class="popup-con_wrap normal">
+                                    <span class="pop_txt2">Placeholder text</span><br>
+                            </div><!--.popup-con_wrap-->
+                            <div class="popup-btn">
+                                <button class="btn btn-ok">OK</button>
+                            </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                    </div><!--.popup-layer-->
+                  </div><!--.popup id-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-10">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt">title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                          <div class="popup-con_wrap normal">
+                                  <span>Placeholder text</span>  
+                          </div><!--.popup-con_wrap-->
+                          <div class="popup-btn">
+                              <button class="btn btn-ok">OK</button>
+                          </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                      </div><!--.popup-layer-->
+                    </div><!--.popup reset-->
+                  </div><!--.popup_wrap-->  
+              </div><!--.content03-->
+            </div><!--.content_box-->
+            
+            <div class="content_box pop_up">
+              <div class="content04">
+                <h5>실패 Failed</h5>
+                <span class="cont_txt">실패 상태를 아이콘으로 표시합니다.</span>
+                <div class="popup_wrap">
+                  <div class="btn_box">
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-05"><span>타이틀 <br> Click Me!  </span></button>
+                    </div>
+                  </div><!--.btn-box-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-05">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt">title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                          <div class="popup-con_wrap">
+                          <div class="popup-icon icon-failed">아이콘</div><!--.popup-icon-->
+                                  <span class="pop_txt2">Placeholder text</span>  
+                          </div><!--.popup-con_wrap-->
+                          <div class="popup-btn">
+                              <button class="btn btn-ok">OK</button>
+                          </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                      </div><!--.popup-layer-->
+                    </div><!--.popup reset-->
+                  </div><!--.popup_wrap-->
+
+              </div><!--.content04-->
+            </div><!--.content_box-->
+          </div><!--.bottom-cont-->
+
+
+          <!--성공, 진행상태 팝업 시작-->
+          <div class="bottom-cont">
+            <div class="content_box pop_up">
+              <div class="content03">
+                <h5>성공 Success</h5>
+                <span class="cont_txt">성공 상태를 아이콘으로 표시합니다.</span>
+                <div class="popup_wrap">
+                  <div class="btn_box">
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-02"><span>더블 타이틀 <br> Click Me!  </span></button>
+                    </div>
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-08"><span>타이틀 <br> Click Me! </span></button>
+                    </div>
+                  </div><!--.btn-box-->
+                  <!--팝업 구조-->
+                  <div class="popup reset" id="layerpopup-02">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt"><span>&#91;Title&#93;</span>Title</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                            <div class="popup-con_wrap">
+                                <div class="popup-icon exclamation-icon-b">아이콘</div><!--.popup-icon-->
+                                <div class="popup-txt">
+                                    <span class="pop_txt2">Placeholder text</span>  
+                                </div><!--.popup-txt-->
+                            </div><!--.popup-con_wrap-->
+                            <div class="popup-btn">
+                                <button class="btn btn-ok">OK</button>
+                            </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                    </div><!--.popup-layer-->
+                </div><!--.popup reset-->
+                <!--팝업 구조-->
+                <div class="popup reset" id="layerpopup-08">
+                  <div class="popup-layer">
+                      <div class="popup-title">
+                          <p class="pop_txt">Title</p>
+                          <a href="#" class="popup-close"></a>
+                      </div><!--.popup-title-->
+                      <div class="popup-con">
+                          <div class="popup-con_wrap">
+                              <div class="popup-icon exclamation-icon-b">아이콘</div><!--.popup-icon-->
+                              <div class="popup-txt">
+                                  <span class="pop_txt2">Placeholder text</span>  
+                              </div><!--.popup-txt-->
+                          </div><!--.popup-con_wrap-->
+                          <div class="popup-btn">
+                              <button class="btn btn-ok">OK</button>
+                          </div><!--.popup-btn-->
+                      </div><!--.popup-con-->
+                  </div><!--.popup-layer-->
+              </div><!--.popup reset-->
+
+                  </div><!--.popup_wrap--> 
+              </div><!--.content05-->
+            </div><!--.content_box-->
+            
+            <div class="content_box pop_up">
+              <div class="content04">
+                <h5>진행상태 Progress</h5>
+                <span class="cont_txt">Value를 표시하여 진행 상태를 보여줍니다.</span>
+                <div class="popup_wrap">
+                  <div class="btn_box">
+                    <div class="btn btn-pop">
+                      <button type='button' class="btn-popup" data-pop="#layerpopup-06"><span>상태 진행바 <br> Click Me! </span></button>
+                    </div>
+                  </div><!--.btn-box-->
+                  </div><!--.popup_wrap-->
+                  <div class="popup reset" id="layerpopup-06">
+                    <div class="popup-layer">
+                        <div class="popup-title">
+                            <p class="pop_txt">Exporting</p>
+                            <a href="#" class="popup-close"></a>
+                        </div><!--.popup-title-->
+                        <div class="popup-con">
+                            <div class="popup-con_wrap loading">
+                                <div class="progress-bar">
+                                  <label for="html">10%</label>
+                                  <progress id="html" max="100" value="100">100%</progress>
+                                </div><!--.popup-txt-->
+                            </div><!--.popup-con_wrap-->
+                            <div class="popup-btn">
+                              <button class="btn cancel">Cancel</button>
+                          </div><!--.popup-btn-->
+                        </div><!--.popup-con-->
+                    </div><!--.popup-layer-->
+                  </div><!--.popup id-->
+              </div><!--.content06-->
+            </div><!--.content_box-->
+          </div><!--.bottom-cont-->
+      </div><!--.cont-->
+    </div><!--#content-->
+  </div><!--.wrap-->
+</body>
+</html>

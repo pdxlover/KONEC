@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>[INVERTER] 공정품질조회</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="../img/picture/favicon.png">
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="inverter inverter0300 light">
+    <form action="#">
+      <header class="color-03 bg-color-04">
+        <h1><a href="../doc/main.html" class="hiden">CONEX<img src="../img/picture/logo.png" alt="CONEX"></a></h1>
+        <nav>
+          <div class="btn open"><a href="#" class="hiden icon-menu">열기</a></div>
+          <div class="gnb-wrap">
+            <div class="dim"></div>
+            <div class="gnb-m color-01 bg-color-01">
+              <div class="btn close"><a href="#" class="hiden icon-close">닫기</a></div>
+              <ul>
+                <li>
+                  <h2>시스템 관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/system0100.html">사용자 관리</a></li>
+                    <li><a href="../doc/system0200.html">안돈 오작동값 셋팅</a></li>
+                    <li><a href="../doc/system0300.html">암호변경</a></li>
+                    <li><a href="../doc/login.html">재로그인</a></li>
+                    <li><a href="../doc/system0400.html">버전관리</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>MOTOR 제품포장관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/motor0100.html">테슬라 제품포장등록</a></li>
+                    <li><a href="../doc/motor0200.html">가공추적조회</a></li>
+                    <li><a href="../doc/motor0300.html">공정품질조회</a></li>
+                    <li><a href="../doc/motor0400.html">가공설비조회</a></li>
+                    <li><a href="../doc/motor0500.html">마감정보등록</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>INVERTER 제품포장관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/inverter0100.html">테슬라 제품포장등록</a></li>
+                    <li><a href="../doc/inverter0200.html">가공추적조회</a></li>
+                    <li><a href="../doc/inverter0300.html">공정품질조회</a></li>
+                    <li><a href="../doc/inverter0400.html">가공설비조회</a></li>
+                    <li><a href="../doc/inverter0500.html">마감정보등록</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>모니터링</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/monitoring0100.html">[MOTOR] MONITORING</a></li>
+                    <li><a href="../doc/monitoring0200.html">[INVERTER] MONITORING</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>[관리자 메뉴]</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/manager0100.html">후공정 NG 관리</a></li>
+                    <li><a href="../doc/manager0200.html">마스터 모드 관리</a></li>
+                    <li><a href="../doc/manager0300.html">소재 투입 횟수 관리</a></li>
+                    <li><a href="../doc/manager0400.html">누락 정보 등록</a></li>
+                    <li><a href="../doc/manager0500.html">마킹기 조회</a></li>
+                  </ul><!--.depth02-->
+                </li>
+              </ul>
+            </div><!--.gnb-m-->
+          </div><!--.gnb-wrap-->
+          <div class="gnb-pc">
+            <ul>
+              <li>
+                <h2><span>시스템 관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/system0100.html">사용자 관리</a></li>
+                  <li><a href="../doc/system0200.html">안돈 오작동값 셋팅</a></li>
+                  <li><a href="../doc/system0300.html">암호변경</a></li>
+                  <li><a href="../doc/login.html">재로그인</a></li>
+                  <li><a href="../doc/system0400.html">버전관리</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>MOTOR</span> <span>제품포장관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/motor0100.html">테슬라 제품포장등록</a></li>
+                  <li><a href="../doc/motor0200.html">가공추적조회</a></li>
+                  <li><a href="../doc/motor0300.html">공정품질조회</a></li>
+                  <li><a href="../doc/motor0400.html">가공설비조회</a></li>
+                  <li><a href="../doc/motor0500.html">마감정보등록</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>INVERTER</span> <span>제품포장관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/inverter0100.html">테슬라 제품포장등록</a></li>
+                  <li><a href="../doc/inverter0200.html">가공추적조회</a></li>
+                  <li><a href="../doc/inverter0300.html">공정품질조회</a></li>
+                  <li><a href="../doc/inverter0400.html">가공설비조회</a></li>
+                  <li><a href="../doc/inverter0500.html">마감정보등록</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>모니터링</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/monitoring0100.html">[MOTOR] MONITORING</a></li>
+                  <li><a href="../doc/monitoring0200.html">[INVERTER] MONITORING</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>[관리자 메뉴]</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/manager0100.html">후공정 NG 관리</a></li>
+                  <li><a href="../doc/manager0200.html">마스터 모드 관리</a></li>
+                  <li><a href="../doc/manager0300.html">소재 투입 횟수 관리</a></li>
+                  <li><a href="../doc/manager0400.html">누락 정보 등록</a></li>
+                  <li><a href="../doc/manager0500.html">마킹기 조회</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+            </ul>
+            <div class="dim bg-color-04"></div>
+          </div><!--.gnb-pc-->
+        </nav>
+        <div class="toggle-box">
+          <div class="switches-container mode">
+            <input type="radio" id="switchDark" name="switchMode" value="switchDark" checked="checked">
+            <input type="radio" id="switchLight" name="switchMode" value="switchLight">
+            <label for="switchDark"></label>
+            <label for="switchLight"></label>
+
+            <div class="switch-wrapper">
+              <div class="switch bg-color-08">
+                <div><img src="../img/icon/icon-light.png" alt="light"></div>
+                <div><img src="../img/icon/icon-dark.png" alt="dark"></div>
+              </div><!--.switch-->
+            </div><!--.switch-wrapper-->
+          </div><!--.switch-wrapper-->
+
+          <div class="switches-container lang">
+            <input type="radio" id="switchKOR" name="switchLang" value="switchKOR" checked="checked">
+            <input type="radio" id="switchENG" name="switchLang" value="switchENG">
+            <label for="switchKOR"></label>
+            <label for="switchENG"></label>
+
+            <div class="switch-wrapper">
+              <div class="switch bg-color-08">
+                <div class="color-05">KOR</div>
+                <div class="color-05">ENG</div>
+              </div><!--.switch-->
+            </div><!--.switch-wrapper-->
+          </div><!--.switch-wrapper-->
+        </div><!--.toggle-box-->
+      </header>
+
+      <div class="sub-bg color-bg bg-color-03">
+        <div class="img-box"></div>
+        <div class="dark-bg"></div>
+      </div><!--.sub-bg-->
+
+      <section id="content">
+        <div class="title-box">
+          <h3 class="color-03">[INVERTER] 공정품질조회</h3>
+        </div><!--.title-box-->
+        <div class="head-box">
+          <div class="con-box bg-color-05">
+            <div class="flex-wrap">
+              <fieldset>
+                <div class="user-box"><!--.incorrect, .correct 넣으면 .input-text에도 같은 클래스 추가됨-->
+                  <div class="flex-wrap">
+                    <span>
+                      <div class="input-text material-nub">
+                        <label for="material-nub" class="color-05">소재번호</label>
+                        <input type="text" placeholder="Enter Number Here..." id="material-nub">
+                        <input type="text" placeholder="Enter Number Here..." id="material-nub">
+                      </div><!--.material-nub-->
+                      <div class="input-text metal-nub">
+                        <label for="metal-nub" class="color-05">금형번호</label>
+                        <input type="text" placeholder="Enter Number Here..." id="metal-nub">
+                      </div><!--.metal-nub-->
+                      <div class="input-text production-country">
+                        <label for="production-country" class="color-05">생산국가</label>
+                        <select name="production-country" id="production-country">
+                          <option value="production-country">전체</option>
+                          <option value="production-country">서산</option>
+                          <option value="production-country">휴스턴</option>
+                        </select>
+                      </div><!--.production-country-->
+                    </span>
+                    <span>
+                      <div class="input-text process-index">
+                        <label for="process-index" class="color-05">가공공정</label>
+                        <select name="process-index" id="process-index">
+                          <option value="process-index">OP10</option>
+                          <option value="process-index">OP20</option>
+                          <option value="process-index">OP30</option>
+                          <option value="process-index">검사기</option>
+                          <option value="process-index">3D 검사기</option>
+                          <option value="process-index">단품 LEAK</option>
+                          <option value="process-index">OIL SEAL</option>
+                          <option value="process-index">조립 LEAK</option>
+                          <option value="process-index">PIN 압입기</option>
+                          <option value="process-index">BUSH 압입기</option>
+                          <option value="process-index">E/P 검사기</option>
+                          <option value="process-index">마킹기</option>
+                        </select>
+                      </div><!--.process-index-->
+                      <div class="input-text search-date-from">
+                        <label for="search-date-from" class="color-05">조회기간</label>
+                        <input type="date" id="search-date-from">
+                        <input type="date" id="search-date-to">
+                      </div><!--.search-date-from-->
+                    </span>
+                  </div><!--.flex-wrap-->
+                </div><!--.user-box-->
+              </fieldset>
+              <div class="btn-box">
+                <div class="btn btn-search"><button type="button"><span>조회</span></button></div>
+                <div class="btn btn-excel"><button type="button"><span>액셀</span></button></div>
+              </div><!--.btn-box-->
+            </div><!--.flex-wrap-->
+          </div><!--.con-box-->
+        </div><!--.head-box-->
+        <div class="bot-box">
+          <div class="con-box bg-color-05">
+            <div class="table-box">
+              <table>
+                <thead>
+                  <tr class="color-03 bg-color-06">
+                    <th>1</th>
+                    <th>No.</th>
+                    <th>소재번호</th>
+                    <th>일자</th>
+                    <th>시간</th>
+                    <th>종합판정</th>
+                    <th>생산국가</th>
+                    <th>금형번호</th>
+                    <th>가공호기</th>
+                    <th>가공시리얼</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--.table-box-->
+          </div><!--.con-box-->
+        </div><!--.bot-box-->
+      </section><!--#content-->
+
+      <footer class="color-03 bg-color-06">
+        <div class="footer-wrap">
+          <div class="right">
+            <div>
+              <p>[INVERTER] 공정품질조회</p>
+              <p>QA120FF00</p>
+            </div>
+            <div>
+              <p>
+                <span>0000-00-00</span>
+                <span>00:00:00</span>
+              </p>
+            </div>
+          </div><!--.right-->
+          <div class="left">
+            <div>
+              <p>Copyright PinelT MES Ver.1.0.01</p>
+            </div>
+            <div class="user bg-color-07">
+              <p>현재 접속자: Manager</p>
+            </div>
+          </div><!--.left-->
+        </div><!--.left-->
+      </footer>
+
+    </form>
+  </div><!--#wrap-->
+</body>
+
+</html>

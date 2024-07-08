@@ -1,0 +1,1348 @@
+@charset "utf-8";
+
+@media(orientation: portrait) {
+  html.monitoring {
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+}
+
+/*layout 시작*/
+
+.monitoring#wrap {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  padding: 25px 35px;
+}
+
+.monitoring .inner {
+  height: 100%;
+}
+
+.monitoring header {
+  width: auto;
+  height: 12%;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.monitoring header>div span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.monitoring header .title-box {
+  width: 33%;
+  position: relative;
+}
+
+.monitoring header .title-box h2 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.monitoring header .ct-box {
+  width: 20%;
+  height: 70%;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .ct-box div:first-child {
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .ct-box div:first-child span {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  white-space: nowrap;
+}
+
+.monitoring header .ct-box div:last-child {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+.monitoring header .ct-box div:last-child span {
+  top: 55%;
+  right: 0%;
+  transform: translate(0, -50%);
+}
+
+.monitoring header .time-box {
+  width: 18%;
+  height: 70%;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .time-box div:first-child {
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .time-box div:first-child span {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  white-space: nowrap;
+
+}
+
+.monitoring header .time-box div:last-child {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+.monitoring header .time-box div:last-child span {
+  top: 55%;
+  right: 0%;
+  transform: translate(0, -50%);
+}
+
+.monitoring header .clock-box {
+  width: 16%;
+  height: 70%;
+  margin-top: 1%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .clock-box div {
+  height: 100%;
+  position: relative;
+}
+
+.monitoring header .clock-box span {
+  top: 55%;
+  left: 50%;
+}
+
+.monitoring header .btn-box {
+  width: 3%;
+  position: relative;
+
+}
+
+.monitoring header .btn-box .btn-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring header .btn-box .btn-close button span {
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, 0);
+}
+
+.monitoring #count-wrap {
+  height: 21%;
+  margin-bottom: 0.5%;
+}
+
+.monitoring #count-wrap ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.monitoring #count-wrap ul li {
+  width: calc(95% / 7);
+  height: 100%;
+  border-radius: 10px;
+  padding: 0.5%;
+  position: relative;
+}
+
+.monitoring #count-wrap .bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.monitoring #count-wrap .bg-box div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6%;
+  height: 100%;
+  background: url(../img/picture/monitor-count_box-left.png)no-repeat left / cover;
+}
+
+.monitoring #count-wrap .bg-box div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6%;
+  height: 100%;
+  background: url(../img/picture/monitor-count_box-right.png)no-repeat right / cover;
+}
+
+.monitoring #count-wrap .bg-box div:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 6%;
+  background: url(../img/picture/monitor-count_box-top.png)no-repeat right / cover;
+}
+
+.monitoring #count-wrap .title-box {
+  position: relative;
+  height: 45%;
+}
+
+.monitoring #count-wrap .count-box {
+  position: relative;
+  width: 90%;
+  height: 55%;
+  margin: auto;
+  border-radius: 5px;
+  border-top: 3px solid #83cddc;
+  border-bottom: 3px solid #83cddc;
+  background-color: #696969;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.25);
+}
+
+.monitoring header .time-box div:first-child {
+  left: 5%;
+}
+
+.monitoring #count-wrap p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.monitoring #table-wrap {
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.monitoring #table-wrap .table-box {
+  width: 49.5%;
+  height: 100%;
+  max-height: none;
+  overflow: hidden;
+}
+
+.monitoring #table-wrap .table-box table {
+  height: 100%;
+}
+
+
+.monitoring #table-wrap .table-box table thead {
+  height: 10%;
+}
+
+.monitoring #table-wrap .table-box table tbody {
+  height: 90%;
+}
+
+.monitoring #table-wrap .table-box table tbody td:nth-child(2n) {
+  background-color: transparent;
+}
+
+.monitoring #table-wrap .table-box table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.monitoring.setting header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7%;
+}
+
+.monitoring.setting header .left-box {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.monitoring.setting header .btn-box {
+  width: 20%;
+}
+
+.monitoring.setting header .btn-box .btn-txt_close span {
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+}
+
+.monitoring.setting header .title-box {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.monitoring.setting header .title-box h1 {
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.monitoring.setting header .right-box {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.monitoring.setting header .right-box>div>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.monitoring.setting header .right-box span {
+  position: static !important;
+  transform: translate(0, 0) !important;
+}
+
+.monitoring.setting header .right-box .ct-box {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 25%;
+  height: 100%;
+}
+
+.monitoring.setting header .right-box .time-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 100%;
+}
+
+.monitoring.setting header .right-box .clock-box {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 100%;
+}
+
+.monitoring.setting section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 80%;
+}
+
+.monitoring.setting .title-box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.5%;
+}
+
+.monitoring.setting section .title-box::after {
+  content: "";
+  display: block;
+  width: 83%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+}
+
+.monitoring.setting .con-box {
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.monitoring.setting .con-box .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 90%;
+}
+
+.monitoring.setting .con-box .ct-box {
+  height: 10%;
+  margin-bottom: 1%;
+}
+
+.monitoring.setting .con-box .ct-box .ct-setting {
+  display: flex;
+  justify-content: left;
+}
+
+.monitoring.setting .con-box .ct-box .ct-setting div:first-child {
+  display: flex;
+  position: relative;
+  margin-right: 1%;
+  line-height: 35px;
+}
+
+.monitoring.setting .con-box .ct-box .ct-setting input {
+  vertical-align: bottom;
+}
+
+.monitoring.setting .con-box .ct-box .ct-setting div:last-child {
+  position: relative;
+}
+
+.monitoring.setting .con-box .ct-box .ct-setting input+span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(120%, 0);
+}
+
+.monitoring.setting .con-box .time-box {
+  height: 86%;
+}
+
+.monitoring.setting .con-box .time-box div:first-child {
+  height: 5%;
+  margin-bottom: 2%;
+}
+
+.monitoring.setting .con-box .table-box {
+  height: 93%;
+}
+
+.monitoring.setting .con-box .table-box table {
+  height: 100%;
+}
+
+.monitoring.setting .con-box table thead {
+  height: 7%;
+}
+
+.monitoring.setting .con-box table th,
+.monitoring.setting .con-box table td {
+  padding: 0;
+  height: auto;
+}
+
+.monitoring.setting .con-box .btn-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+.monitoring.setting .con-box .btn-box .btn {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .monitoring header .btn-box .btn-close {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .monitoring header .btn-box .btn-close {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .monitoring header .btn-box .btn-close {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .monitoring header .btn-box .btn-close {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/*노트북 시작*/
+@media screen and (min-width: 1024px) {
+
+  @media(orientation: portrait) {
+    html.monitoring {
+      transform: rotate(0);
+      transform-origin: center;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  .monitoring#wrap {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .monitoring header h1 {
+    width: 12%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .monitoring header .title-box {
+    width: 30%;
+  }
+
+  .monitoring header .ct-box {
+    width: 17%;
+  }
+
+  .monitoring header .time-box {
+    width: 17%;
+  }
+
+  .monitoring header .clock-box {
+    width: 15%;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .monitoring header .clock-box {
+    -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 1232px) {
+  .monitoring header .btn-box .btn-close {
+    width: 45px;
+    height: 45px;
+  }
+
+  .monitoring.setting header .right-box {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .monitoring header .btn-box .btn-close {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .monitoring header .btn-box .btn-close {
+    width: 55px;
+    height: 55px;
+  }
+
+  .monitoring.setting header .right-box {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .monitoring header .btn-box .btn-close {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/*layout 끝*/
+
+/*content 시작*/
+
+.monitoring header {
+  text-align: center;
+}
+
+.monitoring header h1 {
+  display: none;
+}
+
+.monitoring header .title-box h2 {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.monitoring header .title-box h2 strong {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.monitoring header .ct-box {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.monitoring header .time-box {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+.monitoring header .clock-box {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.monitoring header .btn-box .btn-close button span {
+  background: url(../img/icon/btn-close-monitor.png) no-repeat center / 80%;
+}
+
+.monitoring #count-wrap .title-box p {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.monitoring #count-wrap ul li:nth-child(5) .title-box p {
+  font-size: 1.2rem;
+}
+
+.monitoring #count-wrap .count-box p {
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.monitoring #table-wrap .table-box table {
+  font-size: 1.2rem;
+}
+
+.monitoring #table-wrap .table-box table tr th,
+.monitoring #table-wrap .table-box table tr td {
+  height: 10%;
+  padding: 0px 0;
+}
+
+.monitoring.setting header .btn-box .btn-txt_close span {
+  font-size: 1.8rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring.setting header .title-box h1 {
+  display: block;
+  font-size: 1.4rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring.setting header .right-box div {
+  font-size: 1.2rem;
+  font-weight: normal;
+  box-shadow: none;
+  white-space: nowrap;
+  border-radius: 0;
+  margin-top: 0;
+  height: auto;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.monitoring.setting .title-box h2 {
+  font-size: 1.2rem;
+}
+
+.monitoring.setting .con-box .ct-box,
+.monitoring.setting .con-box .time-box {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.monitoring.setting .con-box .time-box table {
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+.monitoring.setting .con-box .time-box table tbody td:first-child {
+  font-weight: normal;
+}
+
+.monitoring.setting .con-box .ct-box input {
+  height: 80%;
+}
+
+.monitoring.setting .inner .btn-box {
+  transform: scale(0.5) translate(50%, -50%);
+}
+
+.monitoring.setting .con-box .time-box table label {
+  padding-left: 10px;
+}
+
+.monitoring.setting input[type='radio']+label::before {
+  width: 8px;
+  height: 8px;
+  top: calc(50% - 1.5px);
+  left: 0px;
+}
+
+.monitoring.setting input[type='radio']:checked+label::after {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: calc(50% - 1.5px);
+  left: 2px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .monitoring header .title-box h2 {
+    font-size: 1.3rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 1.4rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 1.8rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 2.2rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 1.3rem;
+  }
+
+  .monitoring.setting header .title-box h1 {
+    font-size: 1.7rem;
+  }
+
+  .monitoring.setting header .right-box div {
+    font-size: 1.3rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 1.5rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 1.3rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.4rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.2rem;
+  }
+
+  .monitoring.setting .inner .btn-box {
+    transform: scale(0.55) translate(45%, -45%);
+  }
+
+
+
+}
+
+@media screen and (min-width: 700px) {
+  .monitoring header .title-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 1.7rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 1.1rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 2.3rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 2.8rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 1.6rem;
+  }
+
+  .monitoring.setting header .title-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .monitoring.setting header .right-box div {
+    font-size: 1.5rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 1.7rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 1.7rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 1.4rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.5rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.3rem;
+  }
+
+  .monitoring.setting .con-box .ct-box input {
+    height: 85%;
+  }
+
+  .monitoring.setting .inner .btn-box {
+    transform: scale(0.6) translate(40%, -40%);
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .monitoring header .title-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 2.0rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 1.2rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 2.6rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 3.2rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 1.8rem;
+  }
+
+  .monitoring.setting header .title-box h1 {
+    font-size: 2.1rem;
+  }
+
+  .monitoring.setting header .right-box div {
+    font-size: 1.7rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 1.9rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 1.9rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 1.6rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.6rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.4rem;
+  }
+
+  .monitoring.setting .con-box .ct-box input {
+    height: 90%;
+  }
+
+  .monitoring.setting .inner .btn-box {
+    transform: scale(0.75) translate(25%, -25%);
+  }
+
+  .monitoring.setting .con-box .time-box table label {
+    padding-left: 14px;
+  }
+
+  .monitoring.setting input[type='radio']+label::before {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 1.5px);
+    left: 0px;
+  }
+
+  .monitoring.setting input[type='radio']:checked+label::after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: calc(50% - 1.5px);
+    left: 2px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .monitoring header .title-box h2 {
+    font-size: 2.0rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 2.4rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 1.4rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 2.8rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 2.1rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 2.4rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 1.8rem;
+  }
+
+  .monitoring.setting header .title-box h1 {
+    font-size: 2.3rem;
+  }
+
+  .monitoring.setting header .right-box div {
+    font-size: 1.9rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 2.1rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.7rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.5rem;
+  }
+
+  .monitoring.setting .con-box .ct-box input {
+    height: 95%;
+  }
+
+  .monitoring.setting .inner .btn-box {
+    transform: scale(0.9) translate(10%, -10%);
+  }
+
+  .monitoring.setting .con-box .time-box table label {
+    padding-left: 14px;
+  }
+
+  .monitoring.setting input[type='radio']+label::before {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 1.5px);
+    left: 0px;
+  }
+
+  .monitoring.setting input[type='radio']:checked+label::after {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: calc(50% - 1.5px);
+    left: 2px;
+  }
+}
+
+
+/*노트북 시작*/
+@media screen and (min-width: 1024px) {
+  .monitoring header h1 {
+    display: block;
+  }
+
+  .monitoring header .title-box h2 {
+    font-size: 2.1rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 2.5rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 1.5rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 3.0rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 2.4rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p{
+    font-size: 27px;
+  }
+
+  .monitoring.setting header .title-box h1,
+  .monitoring.setting header .right-box div {
+    font-size: 2.3rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 2.7rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.7rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.5rem;
+  }
+
+  .monitoring.setting .con-box .ct-box input {
+    height: 95%;
+  }
+
+  .monitoring.setting .inner .btn-box {
+    transform: scale(1) translate(0, 0);
+  }
+
+  .monitoring.setting .con-box .time-box table label {
+    padding-left: 18px;
+  }
+
+  .monitoring.setting .con-box .table-box {
+    overflow-y: auto;
+  }
+
+  .monitoring.setting input[type='radio']+label::before {
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 1px);
+    left: 0px;
+  }
+
+  .monitoring.setting input[type='radio']:checked+label::after {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    top: calc(50% - 1px);
+    left: 2px;
+  }
+}
+
+@media screen and (min-width: 1232px) {
+  .monitoring header .title-box h2 {
+    font-size: 2.6rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 3.0rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 1.7rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 3.3rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 2.7rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 2.7rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 4.8rem;
+  }
+
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 2.4rem;
+  }
+
+  .monitoring.setting header .btn-box .btn-txt_close span {
+    font-size: 1.9rem;
+  }
+
+  .monitoring.setting header .title-box h1,
+  .monitoring.setting header .right-box div {
+    font-size: 2.5rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 3.1rem;
+  }
+
+  .monitoring.setting .con-box .ct-box input {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .monitoring header .title-box h2 {
+    font-size: 3.0rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 3.6rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 2.0rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 3.8rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 3.1rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 3.1rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 5.3rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 2.7rem;
+  }
+
+  .monitoring.setting header .btn-box .btn-txt_close span {
+    font-size: 1.9rem;
+  }
+
+  .monitoring.setting header .title-box h1,
+  .monitoring.setting header .right-box div {
+    font-size: 2.7rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 3.3rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 1.9rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .monitoring header .title-box h2 {
+    font-size: 3.5rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 4.3rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 2.2rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 4.0rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 3.5rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 3.5rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 5.7rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 2.9rem;
+  }
+
+  .monitoring.setting header .btn-box .btn-txt_close span {
+    font-size: 2.0rem;
+  }
+
+  .monitoring.setting header .title-box h1,
+  .monitoring.setting header .right-box div {
+    font-size: 2.9rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .monitoring header .title-box h2 {
+    font-size: 4.0rem;
+  }
+
+  .monitoring header .title-box h2 strong {
+    font-size: 5.0rem;
+  }
+
+  .monitoring header .ct-box,
+  .monitoring header .time-box {
+    font-size: 2.4rem;
+  }
+
+  .monitoring header .clock-box {
+    font-size: 5.0rem;
+  }
+
+  .monitoring #count-wrap .title-box p {
+    font-size: 4.0rem;
+  }
+
+  .monitoring #count-wrap ul li:nth-child(5) .title-box p {
+    font-size: 4.0rem;
+  }
+
+  .monitoring #count-wrap .count-box p {
+    font-size: 6.0rem;
+  }
+
+  .monitoring #table-wrap .table-box table {
+    font-size: 3.2rem;
+  }
+
+  .monitoring.setting header .btn-box .btn-txt_close span {
+    font-size: 2.1rem;
+  }
+
+  .monitoring.setting header .title-box h1,
+  .monitoring.setting header .right-box div {
+    font-size: 3.1rem;
+  }
+
+  .monitoring.setting .title-box h2 {
+    font-size: 3.7rem;
+  }
+
+  .monitoring.setting .con-box .ct-box,
+  .monitoring.setting .con-box .time-box {
+    font-size: 2.0rem;
+  }
+
+  .monitoring.setting .con-box .time-box table {
+    font-size: 1.6rem;
+  }
+}
+
+/*content 끝*/

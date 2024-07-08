@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+#wrap {
+  position: relative;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+.light .dark-bg {
+  display: none;
+}
+
+.dark .dark-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*header 시작*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 96;
+}
+
+header nav .gnb-wrap {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 97;
+}
+
+header nav .gnb-wrap .dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 98;
+  transition: all 1s;
+}
+
+header nav .gnb-wrap.on .dim {
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+header nav .gnb-wrap .gnb-m {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  width: 95%;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 60px;
+  min-height: 50%;
+  transition: all 1s;
+}
+
+header nav .gnb-wrap.on .gnb-m {
+  bottom: 0;
+}
+
+/*header 끝*/
+
+/*sub-page 시작*/
+
+
+.sub-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sub-bg .img-box {
+  height: 255px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*sub-bg 이미지 변경*/
+.system .sub-bg .img-box {
+  background-image: url(../img/picture/subbg-system.jpg);
+}
+
+/*sub-bg 이미지 변경*/
+.motor .sub-bg .img-box {
+  background-image: url(../img/picture/subbg-motor.jpg);
+}
+
+/*sub-bg 이미지 변경*/
+.inverter .sub-bg .img-box {
+  background-image: url(../img/picture/subbg-inverter.jpg);
+}
+
+/*sub-bg 이미지 변경*/
+.manager .sub-bg .img-box {
+  background-image: url(../img/picture/subbg-manager.jpg);
+}
+
+#content {
+  min-height: calc(100vh - 200px);
+  padding: 0 10px;
+}
+
+#content>div:last-child {
+  margin-bottom: 10px;
+}
+
+#content>.title-box {
+  height: 255px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#content>.title-box h3 {
+  position: absolute;
+  top: calc((100% + 60px) / 2);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head-box {
+  margin-bottom: 10px;
+}
+
+#content .head-box .title-box {
+  border-radius: 10px 10px 0 0;
+  padding: 5px 10px;
+  width: 200px;
+  margin-bottom: 3px;
+}
+
+/*con-box 패딩으로 사이즈 조절*/
+#content .head-box .con-box {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#content .head-box .title-box+.con-box {
+  border-radius: 0px 10px 10px 10px;
+
+}
+
+#content .head-box .con-box .inp-box {
+  display: flex;
+}
+
+
+/*con-box 사이즈 조절*/
+#content .bot-box .con-box {
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+#content .body-box .con-box {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.motor0200 #content .bot-box .con-box,
+.motor0300 #content .bot-box .con-box,
+.inverter0200 #content .bot-box .con-box,
+.inverter0300 #content .bot-box .con-box {
+  max-height: 50vh;
+}
+
+#content .bot-box .con-box {
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#content .con-box .sign-box .btn-box {
+  justify-content: space-between;
+}
+
+
+#content .search-box .con-box {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+
+/*sub-page 끝*/
+
+/*table 시작*/
+/* .manager0100 .bot-box {
+  overflow-y: scroll;
+} */
+
+.table-box {
+  overflow-y: scroll;
+  height: 400px;
+  max-height: 100%;
+}
+
+table {
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  white-space: nowrap;
+}
+
+table thead {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+table thead th {
+  padding: 10px 10px;
+  height: 50px;
+}
+
+table tbody td {
+  padding: 5px 30px;
+  height: 45px;
+}
+
+table tr:nth-child(2n) {
+  background-color: #ebebeb;
+}
+
+table tr:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+table td:nth-child(2n) {
+  background-color: #0366a80d;
+}
+
+table tbody tr:hover {
+  background-color: rgba(38, 155, 233, 0.5);
+}
+
+
+
+table td input {
+  margin: 0;
+}
+
+
+
+/*table 끝*/
+
+/*footer 시작*/
+footer {
+  height: 200px;
+}
+
+/*footer 끝*/
+
+
+/*login.html 시작*/
+.login-bg .fnc-slider {
+  height: 30%;
+}
+
+.login-bg .color-bg {
+  width: 100%;
+  height: 70%;
+  background-color: #ffeddd;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.login-wrap {
+  width: 100vw;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.login-wrap .login-box {
+  width: 300px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*login.html 끝*/
+
+/*main.html 시작*/
+.main-txt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 95%;
+  min-width: 320px;
+}
+
+/*main.html 끝*/
+
+/*manager0100.html 시작*/
+.manager0100 .con-box .flex-wrap {
+  display: block;
+}
+
+.manager0100 .con-box .flex-wrap>div {
+  position: relative;
+}
+
+
+/*manager0100.html 끝*/
+
+
+/*태블릿 시작*/
+@media screen and (min-width: 768px) {
+
+  /*sub-page 시작*/
+  #content {
+    min-height: calc(100vh - 45px);
+  }
+
+  /*sub-page 끝*/
+
+  /*login.html 시작*/
+  .login-bg .fnc-slider {
+    width: 60%;
+    height: 100%;
+  }
+
+  .login-bg .color-bg {
+    width: 40%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .login-wrap {
+    width: 400px;
+    height: 900px;
+    max-height: 80%;
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    background-color: #fff;
+    border-radius: 20px;
+    transform: translate(50%, 50%);
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .login-wrap .login-box {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0;
+    -webkit-box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.0);
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.0);
+  }
+
+  /*login.html 끝*/
+
+
+
+}
+
+/*태블릿 끝*/
+
+/*노트북 시작*/
+@media screen and (min-width: 1024px) {
+
+  /*header 시작*/
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav .gnb-pc>ul>li {
+    width: calc(100% / 5);
+  }
+
+  header nav .gnb-pc .dim {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 5;
+  }
+
+  /*header 끝*/
+
+  /*sub-page 시작*/
+  .sub-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+
+  .sub-bg .img-box {
+    height: 50%;
+  }
+
+  #content {
+    padding: 120px 40px 50px;
+  }
+
+  #content>.title-box {
+    height: auto;
+  }
+
+  #content .head-box {
+    margin: 20px 0 10px;
+  }
+
+  #content .body-box {
+    margin: 20px 0 10px;
+  }
+
+  #content .head-box .title-box {
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  #content>.title-box h3 {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+
+  /*con-box 패딩으로 사이즈 조절*/
+  #content .head-box .con-box {
+    justify-content: space-between;
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+
+  /*con-box 사이즈 조절*/
+  #content .bot-box .con-box {
+    padding: 20px 10px;
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 600px;
+    max-height: 55vh;
+  }
+
+  #content .body-box .con-box {
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 800px;
+    max-height: 70vh;
+  }
+
+  #content .con-box .sign-box {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+  }
+
+  /*sub-page 끝*/
+
+  /*footer 시작*/
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    z-index: 999;
+  }
+
+  /*footer 끝*/
+
+  /*login.html 시작*/
+  .login-wrap {
+    width: 500px;
+    right: 25%;
+  }
+
+  /*login.html 끝*/
+
+  /*manager0100.html 시작*/
+  .manager0100 .con-box .flex-wrap {
+    display: flex !important;
+  }
+
+  .manager0100 .con-box .flex-wrap>div {
+    width: 50%;
+  }
+
+  /*manager0100.html 끝*/
+
+}
+
+/*노트북 끝*/
+
+/*대형PC 시작*/
+@media screen and (min-width: 1920px) {
+
+  /*header 시작*/
+  header nav .gnb-pc .dim {
+    height: 280px;
+  }
+
+  header nav .gnb-pc>ul>li {
+    width: 260px;
+  }
+
+  /*header 끝*/
+
+  /*login.html 시작*/
+  .login-bg .fnc-slider {
+    width: 70%;
+  }
+
+  .login-bg .color-bg {
+    width: 30%;
+  }
+
+  .login-wrap {
+    width: 500px;
+    right: 20%;
+  }
+
+  /*login.html 끝*/
+
+}
+
+/*대형PC 끝*/

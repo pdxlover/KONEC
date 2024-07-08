@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body, h5{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+img{vertical-align: top; border: 0;}
+li{list-style:none}
+a{text-decoration: none; color: #333;}
+
+input{vertical-align: top;}
+input[type=radio]{border-radius:0px 0px; -webkit-border-radius: 50%;}
+input[type=radio]:checked{background-color:#363636;}
+input,button,textarea,select,table{box-sizing: border-box;}
+input,button,textarea,select{border-radius:0; box-sizing: border-box;}
+label,button{cursor:pointer}
+label{position: relative; white-space: nowrap;}
+
+
+
+
+
+.radio_box input[type='radio']#type3,
+.radio_box input[type='radio']#type4 {
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none; 
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  outline: none; 
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #cacaca;
+}
+
+.radio_box input[type='radio']#type3:checked,
+.radio_box input[type='radio']#type4:checked {
+  background-color: #0366A8; 
+  border: 3px solid rgb(245, 245, 245); 
+  box-shadow: 0 0 0 1.6px #cacaca; 
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>사용자 관리</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="../img/picture/favicon.png">
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="system system0100 light">
+    <form action="#">
+      <header class="color-03 bg-color-04">
+        <h1><a href="../doc/main.html" class="hiden">CONEX<img src="../img/picture/logo.png" alt="CONEX"></a></h1>
+        <nav>
+          <div class="btn open"><a href="#" class="hiden icon-menu">열기</a></div>
+          <div class="gnb-wrap">
+            <div class="dim"></div>
+            <div class="gnb-m color-01 bg-color-01">
+              <div class="btn close"><a href="#" class="hiden icon-close">닫기</a></div>
+              <ul>
+                <li>
+                  <h2>시스템 관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/system0100.html">사용자 관리</a></li>
+                    <li><a href="../doc/system0200.html">안돈 오작동값 셋팅</a></li>
+                    <li><a href="../doc/system0300.html">암호변경</a></li>
+                    <li><a href="../doc/login.html">재로그인</a></li>
+                    <li><a href="../doc/system0400.html">버전관리</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>MOTOR 제품포장관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/motor0100.html">테슬라 제품포장등록</a></li>
+                    <li><a href="../doc/motor0200.html">가공추적조회</a></li>
+                    <li><a href="../doc/motor0300.html">공정품질조회</a></li>
+                    <li><a href="../doc/motor0400.html">가공설비조회</a></li>
+                    <li><a href="../doc/motor0500.html">마감정보등록</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>INVERTER 제품포장관리</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/inverter0100.html">테슬라 제품포장등록</a></li>
+                    <li><a href="../doc/inverter0200.html">가공추적조회</a></li>
+                    <li><a href="../doc/inverter0300.html">공정품질조회</a></li>
+                    <li><a href="../doc/inverter0400.html">가공설비조회</a></li>
+                    <li><a href="../doc/inverter0500.html">마감정보등록</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>모니터링</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/monitoring0100.html">[MOTOR] MONITORING</a></li>
+                    <li><a href="../doc/monitoring0200.html">[INVERTER] MONITORING</a></li>
+                  </ul><!--.depth02-->
+                </li>
+                <li>
+                  <h2>[관리자 메뉴]</h2>
+                  <ul class="depth02 color-05">
+                    <li><a href="../doc/manager0100.html">후공정 NG 관리</a></li>
+                    <li><a href="../doc/manager0200.html">마스터 모드 관리</a></li>
+                    <li><a href="../doc/manager0300.html">소재 투입 횟수 관리</a></li>
+                    <li><a href="../doc/manager0400.html">누락 정보 등록</a></li>
+                    <li><a href="../doc/manager0500.html">마킹기 조회</a></li>
+                  </ul><!--.depth02-->
+                </li>
+              </ul>
+            </div><!--.gnb-m-->
+          </div><!--.gnb-wrap-->
+          <div class="gnb-pc">
+            <ul>
+              <li>
+                <h2><span>시스템 관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/system0100.html">사용자 관리</a></li>
+                  <li><a href="../doc/system0200.html">안돈 오작동값 셋팅</a></li>
+                  <li><a href="../doc/system0300.html">암호변경</a></li>
+                  <li><a href="../doc/login.html">재로그인</a></li>
+                  <li><a href="../doc/system0400.html">버전관리</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>MOTOR</span> <span>제품포장관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/motor0100.html">테슬라 제품포장등록</a></li>
+                  <li><a href="../doc/motor0200.html">가공추적조회</a></li>
+                  <li><a href="../doc/motor0300.html">공정품질조회</a></li>
+                  <li><a href="../doc/motor0400.html">가공설비조회</a></li>
+                  <li><a href="../doc/motor0500.html">마감정보등록</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>INVERTER</span> <span>제품포장관리</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/inverter0100.html">테슬라 제품포장등록</a></li>
+                  <li><a href="../doc/inverter0200.html">가공추적조회</a></li>
+                  <li><a href="../doc/inverter0300.html">공정품질조회</a></li>
+                  <li><a href="../doc/inverter0400.html">가공설비조회</a></li>
+                  <li><a href="../doc/inverter0500.html">마감정보등록</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>모니터링</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/monitoring0100.html">[MOTOR] MONITORING</a></li>
+                  <li><a href="../doc/monitoring0200.html">[INVERTER] MONITORING</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+              <li>
+                <h2><span>[관리자 메뉴]</span></h2>
+                <ul class="depth02">
+                  <li><a href="../doc/manager0100.html">후공정 NG 관리</a></li>
+                  <li><a href="../doc/manager0200.html">마스터 모드 관리</a></li>
+                  <li><a href="../doc/manager0300.html">소재 투입 횟수 관리</a></li>
+                  <li><a href="../doc/manager0400.html">누락 정보 등록</a></li>
+                  <li><a href="../doc/manager0500.html">마킹기 조회</a></li>
+                </ul><!--.depth02-->
+                <div class="hover-box">
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                  <div class="bg-color-02"></div>
+                </div><!--.hover-box-->
+              </li>
+            </ul>
+            <div class="dim bg-color-04"></div>
+          </div><!--.gnb-pc-->
+        </nav>
+        <div class="toggle-box">
+          <div class="switches-container mode">
+            <input type="radio" id="switchDark" name="switchMode" value="switchDark" checked="checked">
+            <input type="radio" id="switchLight" name="switchMode" value="switchLight">
+            <label for="switchDark"></label>
+            <label for="switchLight"></label>
+
+            <div class="switch-wrapper">
+              <div class="switch bg-color-08">
+                <div><img src="../img/icon/icon-light.png" alt="light"></div>
+                <div><img src="../img/icon/icon-dark.png" alt="dark"></div>
+              </div><!--.switch-->
+            </div><!--.switch-wrapper-->
+          </div><!--.switch-wrapper-->
+
+          <div class="switches-container lang">
+            <input type="radio" id="switchKOR" name="switchLang" value="switchKOR" checked="checked">
+            <input type="radio" id="switchENG" name="switchLang" value="switchENG">
+            <label for="switchKOR"></label>
+            <label for="switchENG"></label>
+
+            <div class="switch-wrapper">
+              <div class="switch bg-color-08">
+                <div class="color-05">KOR</div>
+                <div class="color-05">ENG</div>
+              </div><!--.switch-->
+            </div><!--.switch-wrapper-->
+          </div><!--.switch-wrapper-->
+        </div><!--.toggle-box-->
+      </header>
+
+      <div class="sub-bg color-bg bg-color-03">
+        <div class="img-box"></div>
+        <div class="dark-bg"></div>
+      </div><!--.sub-bg-->
+
+      <section id="content">
+        <div class="title-box">
+          <h3 class="color-03">사용자 관리</h3>
+        </div><!--.title-box-->
+        <div class="head-box">
+          <div class="title-box bg-color-05">
+            <h4 class="color-05">검색조건</h4>
+          </div><!--.title-box-->
+          <div class="con-box bg-color-05">
+            <div class="search-list">
+              <label for="kor" class="color-05">찾을항목</label>
+              <select name="search-lists" id="search-list">
+                <option value="search-list" class="bg-color-01">사용자ID</option>
+                <option value="search-list" class="bg-color-01">사용자명</option>
+                <option value="search-list" class="bg-color-01">부서명</option>
+                <option value="search-list" class="bg-color-01">직위</option>
+                <option value="search-list" class="bg-color-01">연락처</option>
+              </select>
+              <input type="text" name="search-lists" class="type-list">
+            </div>
+            <div class="flex-wrap src_condition">
+              <span><input type="radio" id="all" name="user" checked="'checked"><label for="all" class="color-05">전체</label></span>
+              <span><input type="radio" id="use" name="user"><label for="use" class="color-05">사용</label></span>
+              <span><input type="radio" id="not" name="user"><label for="not" class="color-05">미사용</label></span>
+            </div><!--.flex-wrap-->
+
+            <div class="btn-flex-wrap">
+              <div class="btn-box">
+                <div class="btn btn-search"><button type="button"><span>검색</span></button></div>
+              </div><!--.btn-box-->
+              <div class="btn-box btn-wrap"><!--클래스 .btn-wrap 추가-->
+                <div class="btn btn-add"><a href="system0101.html"><button type="button"><span>추가</span></button></a></div>
+                <div class="flex-wrap">
+                  <div class="btn btn-delete"><button type="button"><span>삭제</span></button></div>
+                  <div class="btn btn-excel"><button type="button"><span>엑셀</span></button></div>
+                </div><!--.flex-wrap-->
+              </div><!--.btn-box-->
+            </div><!--.btn-flex-wrap-->
+
+          </div><!--.con-box-->
+        </div><!--.search-->
+        <div class="bot-box">
+          <div class="con-box bg-color-05">
+            <h4 class="color-05">사용자 현황</h4>
+            <div class="table-box">
+              <table>
+                <thead>
+                  <tr class="color-03 bg-color-06">
+                    <th>No.</th>
+                    <th>사용자 ID</th>
+                    <th>사용자명</th>
+                    <th>사용여부</th>
+                    <th>부서명</th>
+                    <th>연락처</th>
+                    <th>등록자</th>
+                    <th>등록일시</th>
+                    <th>수정자</th>
+                    <th>수정일시</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>test ID</td>
+                    <td>TEST</td>
+                    <td><input type="checkbox"></td>
+                    <td>test 부서</td>
+                    <td>010-1234-5678</td>
+                    <td>Manager</td>
+                    <td>2024-06-24</td>
+                    <td>Manager</td>
+                    <td>2024-06-25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--.table-box-->
+          </div><!--.con-box-->
+        </div>
+      </section><!--#content-->
+
+      <footer class="color-03 bg-color-06">
+        <div class="footer-wrap">
+          <div class="right">
+            <div>
+              <p>사용자 관리</p>
+              <p>QA120FF00</p>
+            </div>
+            <div>
+              <p>
+                <span>0000-00-00</span>
+                <span>00:00:00</span>
+              </p>
+            </div>
+          </div><!--.right-->
+          <div class="left">
+            <div>
+              <p>Copyright PinelT MES Ver.1.0.01</p>
+            </div>
+            <div class="user bg-color-07">
+              <p>현재 접속자: Manager</p>
+            </div>
+          </div><!--.left-->
+        </div><!--.left-->
+      </footer>
+    </form>
+  </div><!--#wrap-->
+</body>
+
+</html>

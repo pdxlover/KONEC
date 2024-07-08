@@ -1,0 +1,26 @@
+.main-bg{position: relative; width: 100vw; height: 100vh;}
+
+.bgimage {
+  position: absolute;
+  background-color: red;
+  background-image: url(../img/picture/mainbg02.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-filter: grayscale(70%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(70%);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blobCont {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob {
+  position: absolute;
+}

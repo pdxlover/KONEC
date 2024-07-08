@@ -1,0 +1,982 @@
+@charset "utf-8";
+
+.hiden {
+  font-size: 0;
+  color: transparent;
+}
+
+.flex-wrap {
+  display: flex;
+}
+
+.flex-wrap .table-box table {
+  width: 100%;
+}
+
+/*color*/
+#wrap.light .color-01 {
+  color: #e67817;
+}
+
+#wrap.dark .color-01 {
+  color: #e67817;
+}
+
+#wrap.light .color-02 {
+  color: #0366a8;
+}
+
+#wrap.dark .color-02 {
+  color: #0366a8;
+}
+
+#wrap.light .color-03 {
+  color: #fff !important;
+}
+
+#wrap.dark .color-03 {
+  color: #fff !important;
+}
+
+#wrap.light .color-04 {
+  color: #9d9d9d;
+}
+
+#wrap.dark .color-04 {
+  color: #9d9d9d;
+}
+
+#wrap.light .color-05 {
+  color: #000000;
+}
+
+#wrap.dark .color-05 {
+  color: #ffffff;
+}
+
+#wrap.light .color-06 {
+  color: #ffc42d;
+}
+
+#wrap.dark .color-06 {
+  color: #ffc42d;
+}
+
+#wrap.light .color-07 {
+  color: #FF4141;
+}
+
+#wrap.dark .color-07 {
+  color: #FF4141;
+}
+
+#wrap.light .color-08 {
+  color: #25D037;
+}
+
+#wrap.dark .color-08 {
+  color: #25D037;
+}
+
+#wrap.light .color-09 {
+  color: #FFC42D;
+}
+
+#wrap.dark .color-09 {
+  color: #FFC42D;
+}
+
+#wrap.light .color-10 {
+  color: #0047FF;
+}
+
+#wrap.dark .color-10 {
+  color: #0047FF;
+}
+
+/*bg-color*/
+#wrap.light.bg-color-monitor {
+  background-color: #282828;
+}
+
+#wrap.dark.bg-color-monitor {
+  background-color: #282828;
+}
+
+#wrap.light .bg-color-01 {
+  background-color: #fff;
+}
+
+#wrap.dark .bg-color-01 {
+  background-color: #121212;
+}
+
+#wrap.light .bg-color-02 {
+  background-color: #e67817;
+}
+
+#wrap.dark .bg-color-02 {
+  background-color: #e67817;
+}
+
+#wrap.light .bg-color-03 {
+  background-color: #f5f5f5;
+}
+
+#wrap.dark .bg-color-03 {
+  background-color: #f5f5f5;
+}
+
+#wrap.light .bg-color-04 {
+  background-color: #000000cc;
+}
+
+#wrap.dark .bg-color-04 {
+  background-color: #000000cc;
+}
+
+#wrap.light .bg-color-05 {
+  background-color: #ffffff;
+}
+
+#wrap.dark .bg-color-05 {
+  background-color: #141414;
+}
+
+#wrap.light .bg-color-06 {
+  background-color: #0366a8;
+}
+
+#wrap.dark .bg-color-06 {
+  background-color: #4Ab7ff;
+}
+
+#wrap.light .bg-color-07 {
+  background-color: #3585b9;
+}
+
+#wrap.dark .bg-color-07 {
+  background-color: #3585b9;
+}
+
+#wrap.light .bg-color-08 {
+  background-color: #ffffff;
+}
+
+#wrap.dark .bg-color-08 {
+  background-color: #141414;
+}
+
+#wrap.light .bg-color-09 {
+  background-color: #3d3d3d;
+}
+
+#wrap.dark .bg-color-09 {
+  background-color: #3d3d3d;
+}
+
+#wrap.light .bg-color-10 {
+  background-color: #696969;
+}
+
+#wrap.dark .bg-color-10 {
+  background-color: #ffffff;
+}
+
+#wrap.light .bg-color-11 {
+  background-color: #424242;
+}
+
+#wrap.dark .bg-color-11 {
+  background-color: #424242;
+}
+
+#wrap.light .bg-color-12 {
+  background-color: rgba(226, 227, 255, 0.6);
+}
+
+#wrap.dark .bg-color-12 {
+  background-color: #e2e3ff;
+}
+
+#wrap.light.sign-border-01{
+  border: 1px solid #000000;
+}
+
+#wrap.dark.sign-border-02{
+  border: 1px solid #ffffff;
+}
+
+
+
+
+
+
+/*icon*/
+.icon-menu {
+  background: url(../img/icon/btn-menu.png) no-repeat center / contain;
+}
+
+.icon-close {
+  background: url(../img/icon/btn-close.png) no-repeat center / contain;
+}
+
+/*dark 모드 input*/
+#wrap.dark input,
+#wrap.dark select {
+  background-color: transparent;
+  color: #fff;
+}
+
+/*btn*/
+.btn-01 button {
+  display: block;
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+#wrap.light .btn-01 button {
+  background-color: #fff;
+  color: #e67817;
+  border: 2px solid #e67817;
+}
+
+#wrap.light .btn-01 button:hover {
+  background-color: #e67817;
+  color: #fff;
+}
+
+.btn-ok button {
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn-ok button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.btn-ok button span::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+#wrap.light .btn-ok button {
+  color: #00a611;
+  border: 1px solid #00a611;
+}
+
+#wrap.light .btn-ok button:hover {
+  color: #fff !important;
+  background-color: #00a611;
+}
+
+#wrap.light .btn-ok button span::before {
+  background: url(../img/icon/btn-ok.png) no-repeat center / contain;
+}
+
+#wrap.light .btn-ok button:hover span::before {
+  background: url(../img/icon/btn-ok-hover.png) no-repeat center / contain;
+}
+
+#wrap.dark .btn-ok button {
+  color: #fff;
+  border: 1px solid #00a611;
+  background-color: #00a611;
+}
+
+#wrap.dark .btn-ok button:hover {
+  color: #00a611 !important;
+  background-color: #fff;
+}
+
+#wrap.dark .btn-ok button span::before {
+  background: url(../img/icon/btn-ok-hover.png) no-repeat center / contain;
+}
+
+#wrap.dark .btn-ok button:hover span::before {
+  background: url(../img/icon/btn-ok.png) no-repeat center / contain;
+}
+
+
+
+/*btn*/
+.btn-01 button {
+  display: block;
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+#wrap.light .btn-01 button {
+  background-color: #fff;
+  color: #e67817;
+  border: 2px solid #e67817;
+}
+
+#wrap.light .btn-01 button:hover {
+  background-color: #e67817;
+  color: #fff;
+}
+
+.btn-ok button {
+  border: 1px solid #00a611;
+  border-radius: 8px;
+  width: 90px;
+  height: 30px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn-ok button:hover {
+  color: #fff !important;
+  background-color: #00a611;
+}
+
+.btn-ok button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.btn-ok button span::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon/btn-ok.png) no-repeat center / contain;
+}
+
+.btn-ok button:hover span::before {
+  background: url(../img/icon/btn-ok-hover.png) no-repeat center / contain;
+}
+
+
+
+/*공통 css*/
+.btn button {
+  border: 1px solid;
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+#wrap.light .btn button {
+  -webkit-box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#wrap.dark .btn button {
+  -webkit-box-shadow: 0 4px 4px 4px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+}
+
+#wrap.light .btn button:hover {
+  color: #fff !important;
+}
+
+.btn button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 1.7rem;
+  width: auto !important;
+}
+
+.btn button span::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*추가버튼 css*/
+#wrap.light .btn.btn-add button {
+  color: #0366a8;
+  border-color: #0366a8;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-add button:hover {
+  background-color: #0366a8;
+}
+
+#wrap.light .btn.btn-add button span::before {
+  background-image: url(../img/icon/btn-add.png);
+}
+
+#wrap.light .btn.btn-add button:hover span::before {
+  background-image: url(../img/icon/btn-add-hover.png);
+}
+
+#wrap.dark .btn.btn-add button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #0366a8;
+}
+
+#wrap.dark .btn.btn-add button:hover {
+  color: #0366a8;
+  border-color: #0366a8;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-add button span::before {
+  background-image: url(../img/icon/btn-add-hover.png);
+}
+
+#wrap.dark .btn.btn-add button:hover span::before {
+  background-image: url(../img/icon/btn-add.png);
+}
+
+/*반응형 버튼크기 변경 시작*/
+.system0100 .btn-box,
+.system0400 .btn-box,
+.motor0100 .btn-box,
+.inverter0100 .btn-box,
+.manager0200 .btn-box  {
+  width: 307px;
+}
+
+.system0100 .btn.btn-add,
+.system0400 .btn.btn-add,
+.motor0100 .btn.btn-add,
+.inverter0100 .btn.btn-add,
+.manager0200 .btn.btn-save {
+  width: 307px;
+}
+
+.system0100 .btn.btn-add button,
+.system0400 .btn.btn-add button,
+.motor0100 .btn.btn-add button,
+.inverter0100 .btn.btn-add button,
+.manager0200 .btn.btn-save button {
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .btn.btn-add,
+  .btn.btn-save{
+    width: auto !important;
+  }
+
+  .btn.btn-add button,
+  .btn.btn-save button {
+    width: 149px !important;
+  }
+}
+
+
+
+/*반응형 버튼크기 변경 끝*/
+
+/*삭제버튼 css*/
+#wrap.light .btn.btn-delete button {
+  color: #ff5656;
+  border-color: #ff5656;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-delete button:hover {
+  background-color: #ff5656 !important;
+}
+
+#wrap.light .btn.btn-delete button span::before {
+  background-image: url(../img/icon/btn-delete.png);
+}
+
+#wrap.light .btn.btn-delete button:hover span::before {
+  background-image: url(../img/icon/btn-delete-hover.png);
+}
+
+#wrap.dark .btn.btn-delete button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #ff5656;
+}
+
+#wrap.dark .btn.btn-delete button:hover {
+  color: #ff5656;
+  border-color: #ff5656;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-delete button span::before {
+  background-image: url(../img/icon/btn-delete-hover.png);
+}
+
+#wrap.dark .btn.btn-delete button:hover span::before {
+  background-image: url(../img/icon/btn-delete.png);
+}
+
+/*엑셀버튼 css*/
+#wrap.light .btn.btn-excel button {
+  color: #424242;
+  border-color: #424242;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-excel button:hover {
+  background-color: #424242 !important;
+}
+
+#wrap.light .btn.btn-excel button span::before {
+  background-image: url(../img/icon/btn-excel.png);
+}
+
+#wrap.light .btn.btn-excel button:hover span::before {
+  background-image: url(../img/icon/btn-excel-hover.png);
+}
+
+#wrap.dark .btn.btn-excel button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #424242;
+}
+
+#wrap.dark .btn.btn-excel button:hover {
+  color: #424242;
+  border-color: #424242;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-excel button span::before {
+  background-image: url(../img/icon/btn-excel-hover.png);
+}
+
+#wrap.dark .btn.btn-excel button:hover span::before {
+  background-image: url(../img/icon/btn-excel.png);
+}
+
+/*저장 버튼 css*/
+#wrap.light .btn.btn-save button {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-save button:hover {
+  background-color: #0366A8 !important;
+}
+
+#wrap.light .btn.btn-save button span::before {
+  background-image: url(../img/icon/btn-save.png);
+}
+
+#wrap.light .btn.btn-save button:hover span::before {
+  background-image: url(../img/icon/btn-save-hover.png);
+}
+
+#wrap.dark .btn.btn-save button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #0366A8;
+}
+
+#wrap.dark .btn.btn-save button:hover {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-save button span::before {
+  background-image: url(../img/icon/btn-save-hover.png);
+}
+
+#wrap.dark .btn.btn-save button:hover span::before {
+  background-image: url(../img/icon/btn-save.png);
+}
+
+/*연속저장 버튼 css*/
+#wrap.light .btn.btn-save2 button {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-save2 button:hover {
+  background-color: #0366A8 !important;
+}
+
+#wrap.light .btn.btn-save2 button span::before {
+  background-image: url(../img/icon/btn-save2.png);
+}
+
+#wrap.light .btn.btn-save2 button:hover span::before {
+  background-image: url(../img/icon/btn-save2-hover.png);
+}
+
+#wrap.dark .btn.btn-save2 button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #0366A8;
+}
+
+#wrap.dark .btn.btn-save2 button:hover {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-save2 button span::before {
+  background-image: url(../img/icon/btn-save2-hover.png);
+}
+
+#wrap.dark .btn.btn-save2 button:hover span::before {
+  background-image: url(../img/icon/btn-save2.png);
+}
+
+/*초기화 버튼 css*/
+#wrap.light .btn.btn-reset button {
+  color: #00A611;
+  border-color: #00A611;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-reset button:hover {
+  background-color: #00A611 !important;
+}
+
+#wrap.light .btn.btn-reset button span::before {
+  background-image: url(../img/icon/btn-reset.png);
+}
+
+#wrap.light .btn.btn-reset button:hover span::before {
+  background-image: url(../img/icon/btn-reset-hover.png);
+}
+
+#wrap.dark .btn.btn-reset button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #00A611;
+}
+
+#wrap.dark .btn.btn-reset button:hover {
+  color: #00A611;
+  border-color: #00A611;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-reset button span::before {
+  background-image: url(../img/icon/btn-reset-hover.png);
+}
+
+#wrap.dark .btn.btn-reset button:hover span::before {
+  background-image: url(../img/icon/btn-reset.png);
+}
+
+/*조회 버튼 css*/
+
+.btn.btn-search button {
+  color: #fff;
+  border-color: #0366A8;
+}
+
+.btn.btn-search button {
+  background-color: #0366A8 !important;
+}
+
+.btn.btn-search button {
+  background-color: transparent;
+}
+
+.btn.btn-search button span::before {
+  background-image: url(../img/icon/btn-search.png);
+}
+
+
+
+
+/*마킹정보등록 버튼 css*/
+#wrap.light .btn.btn-upload button {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-upload button:hover {
+  background-color: #0366A8 !important;
+}
+
+#wrap.light .btn.btn-upload button span::before {
+  background-image: url(../img/icon/btn-upload.png);
+}
+
+#wrap.light .btn.btn-upload button:hover span::before {
+  background-image: url(../img/icon/btn-upload-hover.png);
+}
+
+#wrap.dark .btn.btn-upload button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #0366A8;
+}
+
+#wrap.dark .btn.btn-upload button:hover {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff !important;
+}
+
+#wrap.dark .btn.btn-upload button span::before {
+  background-image: url(../img/icon/btn-upload-hover.png);
+}
+
+#wrap.dark .btn.btn-upload button:hover span::before {
+  background-image: url(../img/icon/btn-upload.png);
+}
+
+/*pop 버튼 css*/
+
+#wrap.light .btn.btn-pop button {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff;
+}
+
+#wrap.light .btn.btn-pop button span::before {
+  display: none;
+}
+
+#wrap.light .btn button:hover {
+  background-color: #0366A8 !important;
+}
+
+#wrap.dark .btn.btn-upload button {
+  color: #fff;
+  border-color: #fff;
+  background-color: #0366A8;
+}
+
+#wrap.dark .btn.btn-upload button:hover {
+  color: #0366A8;
+  border-color: #0366A8;
+  background-color: #fff !important;
+}
+
+/*라디오버튼*/
+header input[type='radio']+label::before,
+header input[type='radio']:checked+label::after{display: none;}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']+label {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type='radio']+label::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -20px;
+  transform: translateY(-50%);
+}
+
+input[type='radio']:checked+label::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #0366A8;
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -18px;
+  transform: translateY(-50%);
+}
+  /*input*/
+
+  .login-wrap .login-box input[type='radio'],
+  .login-wrap .login-box input[type='checkbox'] {
+    display: none;
+  }
+
+  .login-wrap .login-box input[type='radio']+label,
+  .login-wrap .login-box input[type='checkbox']+label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .login-wrap .login-box input[type='radio']+label::before,
+  .login-wrap .login-box input[type='checkbox']+label::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -20px;
+    transform: translateY(-50%);
+  }
+
+  .login-wrap .login-box input[type='radio']:checked+label::after,
+  .login-wrap .login-box input[type='checkbox']:checked+label::after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: #e67817;
+    border-radius: 3px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -18px;
+    transform: translateY(-50%);
+  }
+
+  .login-wrap .login-box .user-box input[type='text']#user-id,
+  .login-wrap .login-box .user-box input[type='password']#user-pw {
+    height: 38px;
+    padding: 8px 8px 8px 40px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .login-wrap .login-box .input-text {
+    position: relative;
+  }
+
+  .login-wrap .login-box .input-text::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 95%;
+    background-color: #9d9d9d;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 2.5px;
+  }
+
+
+  .login-wrap .login-box .user-box .input-text.inactive input[type='text']#user-id,
+  .login-wrap .login-box .user-box .input-text.inactive input[type='password']#user-pw {
+    border: 1px solid #e0e0e0;
+  }
+
+  .login-wrap .login-box .user-box .input-text.inactive input[type='text']#user-id {
+    background: url(../img/icon/icon-id-nomal.png) no-repeat 10px center, #f9faff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.inactive input[type='password']#user-pw {
+    background: url(../img/icon/icon-pw-nomal.png) no-repeat 10px center, #f9faff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.inactive::before {
+    background-color: #9d9d9d;
+  }
+
+  .login-wrap .login-box .user-box .input-text.focused input[type='text']#user-id,
+  .login-wrap .login-box .user-box .input-text.focused input[type='password']#user-pw {
+    border: 1px solid #696969;
+  }
+
+  .login-wrap .login-box .user-box .input-text.focused input[type='text']#user-id {
+    background: url(../img/icon/icon-id-nomal.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.focused input[type='password']#user-pw {
+    background: url(../img/icon/icon-pw-nomal.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.focused::before {
+    background-color: #696969;
+  }
+
+  .login-wrap .login-box .user-box .input-text.incorrect input[type='text']#user-id,
+  .login-wrap .login-box .user-box .input-text.incorrect input[type='password']#user-pw {
+    border: 1px solid #ff5656;
+  }
+
+  .login-wrap .login-box .user-box .input-text.incorrect input[type='text']#user-id {
+    background: url(../img/icon/icon-id-incorrect.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.incorrect input[type='password']#user-pw {
+    background: url(../img/icon/icon-pw-incorrect.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.incorrect::before {
+    background-color: #ff5656;
+  }
+
+
+  .login-wrap .login-box .user-box .input-text.correct input[type='text']#user-id,
+  .login-wrap .login-box .user-box .input-text.correct input[type='password']#user-pw {
+    border: 1px solid #0366a8;
+  }
+
+  .login-wrap .login-box .user-box .input-text.correct input[type='text']#user-id {
+    background: url(../img/icon/icon-id-correct.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.correct input[type='password']#user-pw {
+    background: url(../img/icon/icon-pw-correct.png) no-repeat 10px center, #fff;
+  }
+
+  .login-wrap .login-box .user-box .input-text.correct::before {
+    background-color: #0366a8;
+  }
+
+  .input-text input[type='text'],
+  .input-text input[type='number'],
+  .input-text input[type='date'] {
+    border: 1px solid #e0e2e7;
+    border-radius: 5px;
+    height: 35px;
+  }
+
+  .input-text.correct input[type='text'],
+  .input-text.correct input[type='number'] {
+    border: 1px solid #0366a8;
+  }
+
+  .input-text.incorrect input[type='text'],
+  .input-text.incorrect input[type='number'] {
+    border: 1px solid #ff5656;
+  }

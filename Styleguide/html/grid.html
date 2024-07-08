@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="tab_menu">
+      <div class="tit-logo"><h4>WEB UI Styleguide</h4></div><!--.tit-logo-->
+      <ul>
+        <li>
+          <a href="#">Rule Guide</a>
+            <ul class="depth2">
+              <li><a href="name_rule.html">네임 작성규칙</a></li>
+              <li><a href="folder.html">폴더 구조</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Component</a>
+          <ul class="depth2">
+            <li><a href="font.html">Font</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="grid.html" class="focus">Grid</a></li>
+            <li><a href="dropdown_list.html">Dropdown List</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="pop_up.html">Pop Up</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Page List</a>
+          <ul class="depth2">
+            <li><a href="login.html">로그인 & 메인화면</a></li>
+            <li><a href="system.html">시스템관리</a></li>
+            <li><a href="motor.html">MOTOR 제품포장관리</a></li>
+            <li><a href="inverter.html">INVERTER 제품포장관리</a></li>
+            <li><a href="mornitering.html">모니터링</a></li>
+            <li><a href="admin.html">관리자메뉴</a></li>
+          </ul> 
+        </li>
+      </ul>
+    </div><!--.tab_menu-->
+    <!--그리드 콘텐츠 시작-->
+    <div id="content">
+      <div id="grid" class="cont">
+          <h1>Grid</h1>
+          <dl>
+            <dt>Grid</dt>
+            <dd>반응형 기기별 브레이크포인트입니다.</dd>
+          </dl>
+
+          <div id="content-wrap">
+            <div class="top-cont">
+              <div class="content_box grid">
+                <div class="content01">
+                  <h5>모바일</h5>
+                    <div class="grid_wrap">
+                      <span class="grid_txt t1">375px</span>
+                      <div class="grid_box">
+                        <img src="../img/moblie.png" alt="모바일그리드">
+                        <span class="grid_txt2">
+                          <p class="grid_txt3">Columns: 4</p>
+                          <p class="grid_txt3">Gutters: 8</p>
+                          <p class="grid_txt3">Magins: 16</p>
+                        </span>
+                      </div><!--.grid-box-->
+                    </div><!--.grid_wrap-->
+                </div><!--.content01-->
+              </div><!--.content_box-->
+
+              <div class="content_box">
+              <div class="content02">
+                  <h5>스몰 태블릿</h5>
+                  <div class="grid_wrap">
+                    <span class="grid_txt t2">768px</span>
+                    <div class="grid_box">
+                      <img src="../img/mini.png" alt="태블릿그리드">
+                      <span class="grid_txt2">
+                        <p class="grid_txt3">Columns: 8</p>
+                        <p class="grid_txt3">Gutters: 16</p>
+                        <p class="grid_txt3">Magins: 24</p>
+                      </span>
+                    </div><!--.grid-box-->
+                  </div><!--.grid_wrap-->
+                </div><!--.content02-->
+              </div><!--.content_box-->
+            </div><!--.top-cont-->
+
+            <div class="bottom-cont">
+              <div class="content_box grid">
+                <div class="content03"> 
+                  <h5>라지 태블릿</h5>
+                  <div class="grid_wrap">
+                    <span class="grid_txt t3">1024px</span>
+                    <div class="grid_box">
+                      <img src="../img/large.png" alt="태블릿그리드">
+                      <span class="grid_txt2">
+                        <p class="grid_txt3">Columns: 12</p>
+                        <p class="grid_txt3">Gutters: 20</p>
+                      </span>
+                    </div><!--.grid-box-->
+                  </div><!--.grid_wrap-->
+                </div><!--.content03-->
+              </div><!--.content_box-->
+
+              <div class="content_box grid">
+                <div class="content04">
+                  <h5>데스크탑</h5>
+                  <div class="grid_wrap">
+                    <span class="grid_txt t4">1920px</span>
+                    <div class="grid_box">
+                      <img src="../img/desktop.png" alt="데스크탑그리드">
+                      <span class="grid_txt2">
+                        <p class="grid_txt3">Columns: 12</p>
+                        <p class="grid_txt3">Gutters: 20</p>
+                      </span>
+                    </div><!--.grid-box-->
+                  </div><!--.grid_wrap-->
+                </div><!--.content04-->
+              </div><!--.content_box-->
+            </div><!--.bottom-cont-->
+          </div><!--.content-wrap-->
+
+      </div><!--.cont-->
+    </div><!--#content-->
+  </div><!--.wrap-->
+</body>
+</html>

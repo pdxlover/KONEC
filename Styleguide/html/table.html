@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="tab_menu">
+      <div class="tit-logo"><h4>WEB UI Styleguide</h4></div><!--.tit-logo-->
+      <ul>
+        <li>
+          <a href="#">Rule Guide</a>
+            <ul class="depth2">
+              <li><a href="name_rule.html">네임 작성규칙</a></li>
+              <li><a href="folder.html">폴더 구조</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Component</a>
+          <ul class="depth2">
+            <li><a href="font.html">Font</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="dropdown_list.html">Dropdown List</a></li>
+            <li><a href="table.html" class="focus">Table</a></li>
+            <li><a href="pop_up.html">Pop Up</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Page List</a>
+          <ul class="depth2">
+            <li><a href="login.html">로그인 & 메인화면</a></li>
+            <li><a href="system.html">시스템관리</a></li>
+            <li><a href="motor.html">MOTOR 제품포장관리</a></li>
+            <li><a href="inverter.html">INVERTER 제품포장관리</a></li>
+            <li><a href="mornitering.html">모니터링</a></li>
+            <li><a href="admin.html">관리자메뉴</a></li>
+          </ul> 
+        </li>
+      </ul>
+    </div><!--.tab_menu-->
+
+    <div id="content">
+      <div id="table" class="cont">
+          <h1>Table</h1>
+          <dl>
+            <dt>Table</dt>
+            <dd>테이블은 필요에 따라 행을 추가합니다.</dd>
+          </dl>
+          <div id="content-wrap">
+            <div class="top-cont">
+              <div class="content_box table">
+                <div class="content01">
+                  <h5>Default</h5>
+                  <span class="cont_txt">기본형 테이블입니다.</span>
+                  <div class="table_wrap">
+                    <div class="table-box">
+                      <table class="ui-table">
+                        <thead>
+                          <tr class="color-03 bg-color-06">
+                            <th>No.</th>
+                            <th>사용자 ID</th>
+                            <th>사용자명</th>
+                            <th>사용여부</th>
+                            <th>부서명</th>
+                            <th>연락처</th>
+                            <th>등록자</th>
+                            <th>등록일시</th>
+                            <th>수정자</th>
+                            <th>수정일시</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!--.table-box-->
+                  </div><!--.table_wrap-->
+                </div><!--.content01-->
+              </div><!--.content_box-->
+            </div><!--.top-cont-->
+            <div class="bottom-cont">
+              <div class="content_box table">
+                <div class="content01">
+                  <h5>Dark Mode</h5>
+                  <span class="cont_txt">다크모드 테이블입니다.</span>
+                  <div class="table_wrap">
+                    <div class="table-box">
+                      <table class="ui-table">
+                        <thead>
+                          <tr class="color-03 bg-color-07">
+                            <th>No.</th>
+                            <th>사용자 ID</th>
+                            <th>사용자명</th>
+                            <th>사용여부</th>
+                            <th>부서명</th>
+                            <th>연락처</th>
+                            <th>등록자</th>
+                            <th>등록일시</th>
+                            <th>수정자</th>
+                            <th>수정일시</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>test ID</td>
+                            <td>TEST</td>
+                            <td><input type="checkbox"></td>
+                            <td>test 부서</td>
+                            <td>010-1234-5678</td>
+                            <td>Manager</td>
+                            <td>2024-06-24</td>
+                            <td>Manager</td>
+                            <td>2024-06-25</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div><!--.table-box-->
+                  </div><!--.table_wrap-->
+                </div><!--.content01-->
+              </div><!--.content_box-->
+            </div><!--.top-cont-->
+          </div><!--#content-wrap-->
+      </div><!--.cont-->
+    </div><!--#content-->
+  </div><!--.wrap-->
+</body>
+</html>

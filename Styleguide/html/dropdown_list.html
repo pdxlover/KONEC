@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown List</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="tab_menu">
+      <div class="tit-logo"><h4>WEB UI Styleguide</h4></div><!--.tit-logo-->
+      <ul>
+        <li>
+          <a href="#">Rule Guide</a>
+            <ul class="depth2">
+              <li><a href="name_rule.html">네임 작성규칙</a></li>
+              <li><a href="folder.html">폴더 구조</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Component</a>
+          <ul class="depth2">
+            <li><a href="font.html">Font</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="dropdown_list.html" class="focus">Dropdown List</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="pop_up.html">Pop Up</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Page List</a>
+          <ul class="depth2">
+            <li><a href="login.html">로그인 & 메인화면</a></li>
+            <li><a href="system.html">시스템관리</a></li>
+            <li><a href="motor.html">MOTOR 제품포장관리</a></li>
+            <li><a href="inverter.html">INVERTER 제품포장관리</a></li>
+            <li><a href="mornitering.html">모니터링</a></li>
+            <li><a href="admin.html">관리자메뉴</a></li>
+          </ul> 
+        </li>
+      </ul>
+    </div><!--.tab_menu-->
+
+    <!--드롭다운 콘텐츠 시작-->
+    <div id="content">
+      <div id="dropdown" class="cont">
+          <h1>Dropdown</h1>
+          <dl>
+            <dt>Dropdown</dt>
+            <dd>옵션박스에 마우스 오버시 색상이 변경됩니다.</dd>
+          </dl>
+          <div id="content-wrap">
+            <div class="top-cont">
+              <div class="content_box dropdown">
+                <div class="content01 dropdown">
+                  <h5>Default</h5>
+                  <select id="dropdown_list" name="dropdown">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 1">Option 2</option>
+                    <option value="Option 1">Option 3</option>
+                    <option value="Option 1">Option 4</option>
+                </select>
+                </div><!--.content01-->
+              </div><!--.content_box-->
+
+              <div class="content_box dropdown">
+                <div class="content02 dropdown">
+                  <h5>Hover</h5>
+                  <select id="dropdown_list" name="dropdown">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 1">Option 2</option>
+                    <option value="Option 1">Option 3</option>
+                    <option value="Option 1">Option 4</option>
+                </select>
+                </div><!--.content02-->
+              </div><!--.content_box-->
+          </div>
+      </div><!--.cont-->
+    </div><!--#content-->
+  </div><!--.wrap-->
+</body>
+</html>

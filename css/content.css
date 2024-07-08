@@ -1,0 +1,2422 @@
+@charset "utf-8";
+
+/*header 시작*/
+header {
+  height: 60px;
+}
+
+header .toggle-box {
+  display: flex;
+  width: 180px;
+  padding-top: 18px;
+  margin-left: -30px;
+  transform: scale(0.6);
+}
+
+header h1 {
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header nav .btn.open {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+header nav .btn.open a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header nav .gnb-pc {
+  display: none;
+}
+
+header nav .gnb-wrap .btn.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+header nav .gnb-wrap .btn.close a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header nav .gnb-m {
+  text-align: center;
+}
+
+header nav .gnb-m>ul>li {
+  margin-bottom: 20px;
+}
+
+header nav .gnb-m h2 {
+  font-size: 2.0rem;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+  font-weight: 400;
+}
+
+header nav .gnb-m>ul>li:hover h2 {
+  font-weight: 700;
+}
+
+header nav .gnb-m a {
+  font-size: 1.8rem;
+}
+
+header nav .gnb-m ul.depth02 li:hover a {
+  font-weight: 700;
+}
+
+header nav .gnb-m ul.depth02 {
+  position: relative;
+}
+
+header nav .gnb-m ul.depth02::before,
+header nav .gnb-m ul.depth02::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #e67817;
+  transition: all 1.3s;
+  position: absolute;
+}
+
+header nav .gnb-m ul.depth02::before {
+  top: 0;
+  left: 0;
+}
+
+header nav .gnb-m ul.depth02::after {
+  bottom: 0;
+  right: 0;
+}
+
+header nav .gnb-m ul.depth02.on::before,
+header nav .gnb-m ul.depth02.on::after {
+  width: 100%;
+}
+
+header nav .gnb-m ul.depth02 li {
+  padding: 10px 0;
+}
+
+/*header 끝*/
+
+/*sub-page 시작*/
+#content .title-box h3 {
+  font-size: 3.2rem;
+}
+
+/*공통 css 시작*/
+/*.head-box*/
+#content .head-box .con-box {
+  display: block;
+}
+
+#content .head-box .con-box .flex-wrap {
+  display: block;
+}
+
+#content .head-box .con-box .input-text {
+  margin-bottom: 20px;
+}
+
+#content .head-box .con-box .input-text label {
+  display: block;
+}
+
+#content .head-box .con-box .input-text input {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+#content .head-box .con-box .head-box .con-box .user-box {
+  display: block;
+}
+
+#content .head-box .con-box h4.user-info-tit {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+#content .head-box .con-box .user-box .input-text input:last-child {
+  margin-bottom: 0;
+}
+
+#content .head-box .con-box .btn-box {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+#content .head-box .con-box .btn-box .btn-search {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#content .head-box .con-box .btn-wrap {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#content .head-box .con-box .btn-wrap .flex-wrap {
+  display: flex;
+}
+
+#content .head-box .con-box .btn-box .btn-add {
+  margin-bottom: 10px;
+}
+
+#content .head-box .con-box .btn-box .btn-save {
+  margin-bottom: 10px;
+}
+
+#content .head-box .con-box .btn-box .btn-delete {
+  margin-right: 10px;
+}
+
+#content .head-box .con-box .search-list {
+  width: 100%;
+}
+
+#content .head-box .con-box .search-list select {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-color: #E0E2E7;
+}
+
+#content .head-box .con-box .search-list input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border-color: #E0E2E7;
+}
+
+#content .head-box .con-box .src_condition {
+  margin-bottom: 20px;
+  width: 40%;
+  justify-content: space-between;
+  margin: 0 auto;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+
+#content .head-box .con-box .src_condition span {
+  padding-left: 25px;
+}
+
+#content .head-box .con-box .logo-box {
+  width: 100px;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#content .head-box .con-box .user-box .input-text label {
+  display: block;
+}
+
+#content .con-box .flex-wrap .left-box .input-text {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*.body-box*/
+#content .body-box .con-box h4.user-info-tit {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.0rem;
+}
+
+#content .body-box .con-box .input-text {
+  margin-bottom: 20px;
+}
+
+#content .body-box .con-box .flex-wrap .input-text input {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+#content .body-box .con-box .user-box .input-text label {
+  display: block;
+}
+
+#content .body-box .con-box .user-box .input-text input {
+  width: 100%;
+}
+
+#content .body-box .con-box .flex-wrap {
+  display: block;
+}
+
+#content .body-box .con-box .flex-wrap .input-text {
+  display: block;
+}
+
+#content .body-box .con-box .flex-wrap .input-text label {
+  display: block;
+}
+
+#content .body-box .con-box .flex-wrap .btn-box {
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+#content .body-box .con-box .flex-wrap .btn-box .btn-reset {
+  margin-bottom: 10px;
+}
+
+
+/*bot-box*/
+#content .bot-box .con-box .flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content .bot-box h4 {
+  margin-bottom: 10px;
+}
+
+/*공통 css 끝*/
+
+
+
+/*라디오버튼*/
+.radio {
+  position: relative;
+}
+
+.radio_box input[type="radio"] {
+  display: none;
+}
+
+.radio_box span input {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10px;
+}
+
+.radio_box input[type='radio']#type3,
+.radio_box input[type='radio']#type4,
+.radio_box input[type='radio']#type5 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #cacaca;
+}
+
+.radio_box input[type='radio']#type3:checked,
+.radio_box input[type='radio']#type4:checked,
+.radio_box input[type='radio']#type5:checked {
+  background-color: #0366A8;
+  border: 3px solid rgb(245, 245, 245);
+  box-shadow: 0 0 0 1.6px #cacaca;
+}
+
+/*라디오버튼 끝*/
+
+/*사용자관리시작*/
+.system0100 #content .head-box .con-box .btn-box .btn-search {
+  margin-top: 20px;
+}
+
+.system0100 #content .head-box .con-box .flex-wrap.src_condition {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*사용자관리끝*/
+
+
+/*사용자등록시작-system0101*/
+
+.system0101 #content .con-box .logo-box {
+  width: 100px;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.system0101 #content .con-box .flex-wrap {
+  display: block;
+}
+
+.system0101 #content .con-box .flex-wrap .userid-flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.system0101 #content .con-box .flex-wrap .left-box .userid-input {
+  width: 80%;
+}
+
+.system0101 #content .con-box .flex-wrap .left-box .input-text input {
+  width: 100%;
+}
+
+.system0101 #content .con-box .flex-wrap .left-box .user-id button {
+  width: 70px;
+  height: 35px;
+  border: 1px solid #E0E2E7;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+/*휴대폰 칸 나누는 부분*/
+.system0101 #content .con-box .flex-wrap .right-box .input-text .phone-num {
+  line-height: 35px;
+
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .input-text .phone-num input {
+  width: calc((100% - 20px) / 3);
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-dept select {
+  width: 100%;
+  border-radius: 5px;
+  border-color: #e0e2e7;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-authority span {
+  padding-left: 20px;
+
+}
+
+.system0101 #content .con-box .flex-wrap .right-box>div {
+  margin-bottom: 20px;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check label {
+  margin-right: 10px;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap .sign-box {
+  width: 100px;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap .sign-box .img-box {
+  width: 90px;
+  height: 110px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 110px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap .btn-box {
+  margin-top: 10px;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap .btn-box .btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.system0101 #content .con-box .flex-wrap .right-box .user-check .btn-box:first-child {
+  margin-right: 10px;
+}
+
+
+/* 버튼(저장,연속저장,초기화) 플렉스 풀기*/
+.system0101 #content .btn-box {
+  display: block;
+  text-align: center;
+}
+
+.system0101 #content .btn-box .btn {
+  margin-bottom: 5px;
+}
+
+/*사용자등록 도장사인 이미지박스랑 +/- 버튼 플렉스*/
+.system0101 #content .sign-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.system0101 #content .sign-box .img-box {
+  width: 130px;
+  height: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 120px;
+  color: #aaaaaa;
+  font-size: 1.4rem;
+}
+
+.system0101 #content .sign-box .btn-box {
+  width: 100px;
+  display: block;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.system0101 #content .sign-box .btn-box .btn-pm {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 40px;
+  position: relative;
+}
+
+
+.system0101 #content .sign-box .btn-box .btn-pm button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #0366A8;
+}
+
+.system0101 #content .sign-box .btn-box .btn-pm:first-child {
+  margin-bottom: 20px;
+}
+
+.system0101 .input-text.user-id {
+  margin-bottom: 30px;
+}
+
+
+
+/*사용자등록끝*/
+
+
+/*안돈 오작동값 셋팅 시작*/
+#content .head-box .con-box .inp-box {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.system0200 #content .head-box .con-box .inp-box p {
+  margin-bottom: 10px;
+}
+
+.system0200 #content .head-box .con-box .inp-box .user-authority {
+  text-align: center;
+}
+
+.system0200 #content .head-box .con-box .inp-box .user-authority span:first-child {
+  margin-right: 20px;
+}
+
+.system0200 #content .head-box .con-box .btn-box .btn-save {
+  margin-bottom: 10px;
+}
+
+/*안돈 오작동값 셋팅 끝*/
+
+/*암호변경 시작*/
+.system0300 #content .con-box .logo-box {
+  width: 100px;
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.system0300 #content .con-box .txt-box {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+/*암호변경 끝*/
+
+/*버전관리 시작*/
+
+
+
+
+/*버전관리 끝*/
+
+/*버전등록 시작*/
+.system0401 .user-box .input-text textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  border-color: #E0E2E7;
+}
+
+.system0401 .btn-box {
+  display: block;
+  text-align: center;
+}
+
+.system0401 .btn-box .btn-add {
+  margin-bottom: 10px;
+}
+
+.system0401 .con-box {
+  overflow-y: scroll;
+}
+
+/*버전등록 끝*/
+
+/*MOTOR/INVERTER 공통 css 시작*/
+.motor0101 #content .body-box .con-box .flex-wrap .input-text,
+.inverter0101 #content .body-box .con-box .flex-wrap .input-text,
+.manager0101 #content .body-box .con-box .flex-wrap .input-text {
+  display: block;
+}
+
+.system0100 #content .head-box .con-box .btn-box .btn-add,
+.motor0100 #content .head-box .con-box .btn-box .btn-add,
+.inverter0100 #content .head-box .con-box .btn-box .btn-add {
+  margin-bottom: 10px;
+}
+
+.motor #content .body-box .con-box .table-box,
+.inverter #content .body-box .con-box .table-box,
+.motor #content .bot-box .con-box .table-box,
+.inverter #content .bot-box .con-box .table-box {
+  margin-bottom: 20px;
+}
+
+
+.motor #content .bot-box .con-box .flex-wrap,
+.inverter #content .bot-box .con-box .flex-wrap {
+  display: block;
+}
+
+
+/*MOTOR0300-공정품질조회*/
+.motor0300 #content .head-box .con-box .input-text select,
+.inverter0300 #content .head-box .con-box .input-text select {
+  width: 100%;
+  border-radius: 5px;
+  border-color: #E0E2E7;
+}
+
+/*MOTOR0300-공정품질조회 끝*/
+
+
+/*MOTOR0500-마킹기정보수동등록*/
+.motor0500 #content .con-box .user-box,
+.inverter0500 #content .con-box .user-box,
+.manager0101 #content .con-box .user-box,
+.manager0400 #content .con-box .user-box {
+  margin-bottom: 30px;
+}
+
+.motor0500 #content .con-box .user-box .input-text input,
+.inverter0500 #content .con-box .user-box .input-text input,
+.manager0101 #content .con-box .user-box .input-text input,
+.manager0200 #content .con-box .user-box .input-text input,
+.manager0400 #content .con-box .user-box .input-text input {
+  width: 100%;
+}
+
+.motor0500 #content .con-box .btn-box,
+.inverter0500 #content .con-box .btn-box,
+.manager0101 #content .con-box .btn-box,
+.manager0400 #content .con-box .btn-box {
+  display: block;
+  text-align: center;
+}
+
+.motor0500 #content .con-box .btn-box .btn-save,
+.inverter0500 #content .con-box .btn-box .btn-save,
+.manager0101 #content .con-box .btn-box .btn-save,
+.manager0400 #content .con-box .btn-box .btn-save {
+  margin-bottom: 10px;
+}
+
+.motor0500 #content .con-box .user-box .db-connect,
+.inverter0500 #content .con-box .user-box .db-connect,
+.manager0101 #content .con-box .user-box .db-connect,
+.manager0400 #content .con-box .user-box .db-connect {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.motor0500 #content .con-box .user-box .db-connect .radio-block-wrap,
+.inverter0500 #content .con-box .user-box .db-connect .radio-block-wrap,
+.manager0101 #content .con-box .user-box .db-connect .radio-block-wrap,
+.manager0400 #content .con-box .user-box .db-connect .radio-block-wrap {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.motor0500 #content .con-box .user-box .db-connect label,
+.inverter0500 #content .con-box .user-box .db-connect label,
+.manager0101 #content .con-box .user-box .db-connect label,
+.manager0400 #content .con-box .user-box .db-connect label {
+  margin-right: 30px;
+}
+
+.motor0500 #content .con-box .user-box .db-connect span,
+.inverter0500 #content .con-box .user-box .db-connect span,
+.manager0101 #content .con-box .user-box .db-connect span,
+.manager0400 #content .con-box .user-box .db-connect span {
+  font-size: 1.4rem;
+}
+
+/*manager0100-후공정ng관리*/
+
+.manager0100 #content .bot-box .con-box .table-box {
+  margin-bottom: 20px;
+}
+
+.manager0100 #content .bot-box .con-box .flex-wrap {
+  display: block;
+}
+
+.manager0100 #content .bot-box .con-box .flex-wrap {
+  display: block;
+}
+
+.manager0100 #content .bot-box .con-box .table-title-wrap {
+  display: flex;
+}
+
+.manager0100 #content .bot-box .con-box .table-title-wrap .btn-ok {
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/*manager0200-마스터모드 설정*/
+.manager0200 #content .head-box .user-box .db-connect,
+.manager0300 #content .head-box .user-box .db-connect {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.manager0200 #content .head-box .user-box .db-connect span,
+.manager0300 #content .head-box .user-box .db-connect span {
+  padding-left: 20px;
+}
+
+/*manager0400-마킹기정보 수동등록*/
+
+.manager0400 #content .head-box .user-box .db-connect {
+  padding-left: 20px;
+}
+
+
+
+.manager0500 #content .head-box .user-box {
+  display: block;
+}
+
+.manager0500 #content .head-box .user-box .input-text {
+  margin-right: 20px;
+}
+
+.manager0500 #content .head-box .user-box .db-connect {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.manager0500 #content .head-box .user-box .db-connect:first-child {
+  margin-bottom: 20px;
+}
+
+.manager0500 #content .head-box .user-box .db-connect span {
+  margin-right: 25px;
+}
+
+.manager0500 #content .head-box .con-box .btn-box .btn-reset {
+  margin-bottom: 10px;
+}
+
+.manager0500 #content .head-box .con-box .btn-box .btn-delete {
+  margin-right: 0;
+}
+
+
+
+
+
+
+/*sub-page 끝*/
+
+
+/*footer 시작*/
+footer {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+footer .footer-wrap {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+footer .right {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+footer .right div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left {
+  font-size: 1.4rem;
+}
+
+footer p {
+  margin-bottom: 9px;
+}
+
+footer .user {
+  padding: 8px 15px;
+  width: 170px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+/*footer 끝*/
+
+/*login.html 시작*/
+.login-bg .fnc-nav,
+.login-bg .fnc-slide__mask,
+.login-bg .fnc-slide__heading-line {
+  display: none;
+}
+
+/*로그인 배경 이미지 변경 시작*/
+.example-slider .fnc-slide-1 .fnc-slide__inner,
+.example-slider .fnc-slide-1 .fnc-slide__mask-inner {
+  background-image: url("../img/picture/slide_bg01.jpg");
+}
+
+.example-slider .fnc-slide-2 .fnc-slide__inner,
+.example-slider .fnc-slide-2 .fnc-slide__mask-inner {
+  background-image: url("../img/picture/slide_bg02.jpg");
+}
+
+.example-slider .fnc-slide-3 .fnc-slide__inner,
+.example-slider .fnc-slide-3 .fnc-slide__mask-inner {
+  background-image: url("../img/picture/slide_bg03.jpg");
+}
+
+.example-slider .fnc-slide-4 .fnc-slide__inner,
+.example-slider .fnc-slide-4 .fnc-slide__mask-inner {
+  background-image: url("../img/picture/slide_bg04.jpg");
+}
+
+.example-slider .fnc-slide-5 .fnc-slide__inner,
+.example-slider .fnc-slide-5 .fnc-slide__mask-inner {
+  background-image: url("../img/picture/slide_bg05.jpg");
+}
+
+/*로그인 배경 이미지 변경 끝*/
+
+.login-wrap .login-box {
+  padding: 40px 20px;
+}
+
+.login-wrap .login-box h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+.login-wrap .login-box .flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+
+
+.login-wrap .login-box #user-id,
+.login-wrap .login-box #user-pw {
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+
+.login-wrap .login-box .user-box {
+  margin-bottom: 5px;
+}
+
+.login-wrap .login-box #user-id {
+  margin-bottom: 35px;
+}
+
+.login-wrap .login-box #user-pw {
+  margin-bottom: 10px;
+}
+
+.login-wrap .login-box .login-save {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.login-wrap .login-box .btn-01 {
+  margin-bottom: 25px;
+}
+
+.login-wrap .img-box {
+  width: 100px;
+  margin: 40px auto 0;
+}
+
+.user-box .txt-box {
+  position: relative;
+  margin-top: 5px;
+}
+
+.user-box .txt-box p {
+  display: none;
+  font-size: 1.4rem;
+}
+
+.user-box .txt-box.incorrect P {
+  display: block;
+  color: #ff5656;
+}
+
+/*login.html 끝*/
+#wrap.dark.system0101 #content .sign-box .img-box,
+#wrap.dark.system0101 #content .sign-box .btn-box .btn-pm {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*main.html 시작*/
+.main-txt-box {
+  font-size: 3.0rem;
+  text-shadow: 0 4px 4px #000;
+}
+
+.main-txt-box p span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+/*main.html 끝*/
+
+/*태블릿 시작*/
+@media screen and (min-width: 768px) {
+
+  /*header 시작*/
+  header {
+    height: 80px;
+  }
+
+  header h1 {
+    width: 120px;
+  }
+
+  header .toggle-box {
+    padding-top: 25px;
+    margin-left: 0px;
+    transform: scale(0.8);
+  }
+
+  header nav .btn.open {
+    right: 30px;
+  }
+
+  /*header 끝*/
+
+  /*공통 css 시작*/
+  #content .head-box .con-box .inp-box {
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .btn-box .btn-add {
+    margin-bottom: 0;
+  }
+
+  /*공통 css 끝*/
+
+  /*사용자관리 시작*/
+  .system0100 #content .con-box .btn-box .btn-delete {
+    margin-left: 0;
+  }
+
+  /*사용자관리 끝*/
+
+  .system0200 #content .head-box .con-box .inp-box {
+    margin-bottom: 20px;
+  }
+
+  /*버전관리 시작*/
+  .system0400 #content .head-box .con-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .system0400 #content .head-box .con-box .btn-box {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .system0400 #content .head-box .con-box .btn-box .btn-search {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  /*버전관리 끝*/
+
+
+
+  /*manager0300 */
+
+
+  /*footer 시작*/
+  footer {
+    padding: 0px;
+    height: 45px;
+  }
+
+  footer .flex-wrap {
+    max-width: auto;
+    margin: 0;
+  }
+
+  footer .right {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    right: 30px;
+    transform: translateY(-50%);
+  }
+
+  footer .right p {
+    display: flex;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+  }
+
+  footer .right div:last-child span:first-child {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+  }
+
+  footer .right div:last-child p:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  footer .left {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    display: flex;
+  }
+
+  footer .left div {
+    margin-right: 20px;
+  }
+
+  footer p {
+    margin-bottom: 0px;
+  }
+
+  footer .user {
+    transform: translateY(-25%);
+  }
+
+  /*footer 끝*/
+
+  /*login.html 시작*/
+  .login-bg .fnc-nav,
+  .login-bg .fnc-slide__mask,
+  .login-bg .fnc-nav {
+    display: block;
+  }
+
+  .login-wrap .login-box {
+    padding: 100px 0 0;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .login-wrap .login-box h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+  }
+
+  .login-wrap .login-box .login-save {
+    margin-bottom: 20px;
+  }
+
+  .login-wrap .img-box {
+    width: 120px;
+  }
+
+  /*login.html 끝*/
+
+  /*main.html 시작*/
+  .main-txt-box {
+    font-size: 4.7rem;
+  }
+
+  .main-txt-box p span {
+    display: inline;
+    margin-bottom: 30px;
+  }
+
+  /*main.html 끝*/
+}
+
+/*태블릿 끝*/
+
+/*노트북 시작*/
+@media screen and (min-width: 1024px) {
+
+  /*header 시작*/
+  header {
+    height: 100px;
+    padding: 20px 20px;
+  }
+
+  header h1 {
+    width: 130px;
+    position: static;
+    transform: translate(0);
+  }
+
+  header nav .btn.open {
+    display: none;
+  }
+
+  header nav .gnb-wrap {
+    display: none;
+  }
+
+  header nav .gnb-pc {
+    display: block;
+    text-align: center;
+  }
+
+  header nav .gnb-pc>ul {
+    display: flex;
+    height: 100%;
+  }
+
+  header nav .gnb-pc>ul>li {
+    position: relative;
+    padding: 20px;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+  header nav .gnb-pc>ul>li:nth-of-type(2),
+  header nav .gnb-pc>ul>li:nth-of-type(3) {
+    padding: 10px 20px;
+  }
+
+  header nav .gnb-pc h2 {
+    font-size: 1.6rem;
+  }
+
+  header nav .gnb-pc h2 span {
+    display: inline-block;
+  }
+
+  header nav .gnb-pc .depth02 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  header nav .gnb-pc .depth02 li {
+    font-size: 1.6rem;
+    position: relative;
+    padding: 8px 0;
+  }
+
+  header nav .gnb-pc .hover-box {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  header nav .gnb-pc .hover-box div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: all 0.5s;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(1) {
+    top: 5px;
+    left: 0;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(2) {
+    top: 0;
+    right: 5px;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(3) {
+    bottom: 5px;
+    right: 0px;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(4) {
+    bottom: 0px;
+    left: 5px;
+  }
+
+  header nav .gnb-pc .hover-box.on div:nth-child(2n - 1) {
+    width: 100%;
+    height: 2px;
+  }
+
+  header nav .gnb-pc .hover-box.on div:nth-child(2n) {
+    width: 2px;
+    height: 100%;
+  }
+
+  header nav .gnb-pc .depth02 li::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  header nav .gnb-pc .depth02 li:hover::before {
+    width: 100%;
+    height: 2px;
+    background-color: #0366a8;
+  }
+
+  header nav .gnb-pc .depth02 li:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  header nav .gnb-pc .depth02 li:hover:after {
+    width: 100%;
+    height: 2px;
+    background-color: #0366a8;
+  }
+
+  header .btn-box {
+    display: flex;
+  }
+
+  /*header 끝*/
+
+  /*sub-page 시작*/
+
+  #content .body-box .con-box .input-text input~.txt-box {
+    margin: 0;
+  }
+
+
+
+  /*공통 css 시작*/
+
+
+
+  #content .head-box .con-box {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  /*추가*/
+  #content .head-box .con-box .btn-flex-wrap {
+    display: flex;
+    margin: 20px auto 0;
+  }
+
+  #content .head-box .con-box .pave-nub input {
+    width: 150px;
+  }
+
+  #content .head-box .con-box .btn-box {
+    display: flex;
+    width: auto;
+    margin: 0;
+  }
+
+  #content .head-box .con-box .btn-box .btn-search {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .btn-box .btn-add {
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .input-text:last-child {
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .input-text input {
+    width: 100%;
+
+  }
+
+  #content .head-box .con-box h4.user-info-tit {
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .search-list {
+    width: auto;
+    display: flex;
+  }
+
+  #content .head-box .con-box .search-list input {
+    width: auto;
+  }
+
+  #content .head-box .con-box .src_condition {
+    padding-left: 10px;
+    width: auto;
+    align-items: center;
+    margin-top: 0;
+    margin: 0;
+  }
+
+  #content .head-box .search-list label {
+    line-height: 35px;
+  }
+
+  #content .head-box .con-box .search-list select {
+    width: auto;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-color: #E0E2E7;
+    margin-bottom: 0;
+  }
+
+  #content .head-box .con-box .inp-box {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  #content .head-box .search-list input {
+    display: flex;
+    border-radius: 5px;
+    border-color: #E0E2E7;
+  }
+
+  #content .head-box .con-box .flex-wrap .user-box {
+    width: 50%;
+  }
+
+  #content .con-box .head-box .con-box .user-box {
+    display: flex;
+  }
+
+  #content .head-box .con-box .input-text {
+    display: flex;
+    gap: 10px;
+  }
+
+  #content .head-box .con-box .input-text label {
+    display: flex;
+    line-height: 35px;
+  }
+
+  #content .head-box .con-box .input-text input {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+
+  #content .sign-box {
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: -10px;
+  }
+
+  #content .sign-box .btn-box {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+
+  #content .btn-box .btn {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  #content .btn-box .btn:last-child {
+    margin-right: 0;
+  }
+
+
+
+  /*.body-box*/
+
+  #content .body-box .con-box .flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  #content .body-box .con-box .flex-wrap .btn-box {
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  #content .body-box .con-box .flex-wrap fieldset {
+    width: 60%;
+  }
+
+  #content .body-box .con-box .flex-wrap .input-text label {
+    display: flex;
+  }
+
+  #content .body-box .con-box .flex-wrap .input-text input {
+    margin-bottom: 0;
+  }
+
+  .motor0400 .bot-box .table-box,
+  .inverter0400 .bot-box .table-box {
+    width: 50%;
+  }
+
+
+  /*공통 css 끝*/
+
+  /*!!!!!!!!!!!!!!!!!시스템관리 시작!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+  /*사용자관리시작*/
+
+
+  #content .con-box .btn-box .btn-add {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .system0100 #content .head-box .search-list label {
+    margin-right: 10px;
+  }
+
+  .system0100 #content .btn-box {
+    width: auto;
+    flex-wrap: nowrap;
+  }
+
+  .system0100 #content .head-box .con-box .btn-box .btn-search {
+    margin-top: 0;
+  }
+
+  .system0100 #content .con-box .btn-box .btn-add {
+    margin-bottom: 10px;
+  }
+
+  .system0100 #content .head-box .con-box {
+    justify-content: left;
+  }
+
+
+
+
+  table .layer {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  table .layer::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 25px;
+    border-radius: 12.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  table .layer.ok::before {
+    background-color: #579dcc;
+  }
+
+  table .layer.ng::before {
+    background-color: #f46c6c;
+  }
+
+
+  /*사용자관리 끝*/
+
+  /*사용자등록시작-system0101*/
+
+  .system0101 #content .con-box .logo-box {
+    width: 140px;
+    height: auto;
+  }
+
+  .system0101 #content .con-box .user-info-tit {
+    font-size: 2.5rem;
+  }
+
+  .system0101 #content .con-box .flex-wrap {
+    padding: 0 200px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .system0101 #content .con-box .flex-wrap .user-box {
+    width: 100%;
+    ;
+  }
+
+  .system0101 .con-box {
+    overflow-y: scroll;
+  }
+
+  /*휴대폰 칸 나누는 부분*/
+
+  .system0101 #content .con-box .flex-wrap .right-box .user-check label {
+    margin-right: 10px;
+  }
+
+  .system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .system0101 #content .con-box .flex-wrap .right-box .user-check .check-sign-wrap .sign-box {
+    width: 100px;
+  }
+
+  .system0101 .body-box .btn-box {
+    margin-top: 20px;
+  }
+
+  /*사용자등록끝*/
+
+  /*사용자등록 시작*/
+  .system0101 #content .sign-box {
+    width: auto;
+    justify-content: right;
+    margin-bottom: 0;
+  }
+
+
+  /*사용자등록 끝*/
+
+  /*안돈 오작동값 셋팅 시작*/
+
+  .system0200 #content .head-box .con-box .inp-box {
+    margin-bottom: 0;
+  }
+
+  .system0200 #content .head-box .con-box .inp-box p {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .system0200 #content .head-box .con-box .btn-box .btn-save {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .system0200 #content .head-box .con-box .btn-box {
+    margin: 0;
+  }
+
+  /*안돈 오작동값 셋팅 끝*/
+
+
+  /*사용자정보입력(암호변경) 시작*/
+  /*사용자정보입력버튼 플렉스*/
+  .system0101 #content .btn-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*사용자정보입력(암호변경) 끝*/
+
+  /*암호변경 시작*/
+  .system0300 #content .con-box .logo-box {
+    width: 140px;
+    height: auto;
+  }
+
+  .system0300 #content .con-box h4.user-info-tit {
+    margin-bottom: 0;
+  }
+
+  .system0300 #content .con-box fieldset .user-box {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .system0300 #content .con-box .txt-box {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+
+  .system0300 .con-box {
+    overflow-y: scroll;
+  }
+
+  /*암호변경 끝*/
+
+  /*버전정보 시작*/
+  .system0401 .version-flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+  }
+
+  .system0401 #content .body-box .con-box .user-info-tit {
+    font-size: 2.5rem;
+  }
+
+  .system0401 fieldset {
+    width: 70%;
+  }
+
+  .system0401 #content .btn-box {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+
+  #content .con-box .btn-box .btn-add {
+    margin-bottom: auto;
+
+  }
+
+  .system0401 #content .con-box .btn-box .btn-add {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .system0401 .user-box .input-text textarea {
+    height: 150px;
+  }
+
+  /*버전정보 끝*/
+
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!시스템관리 끝!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+  /*MOTOR/INVERTER 공통 css 시작*/
+
+  .motor #content .body-box .con-box .table-box,
+  .inverter #content .body-box .con-box .table-box,
+  .motor #content .bot-box .con-box .table-box,
+  .inverter #content .bot-box .con-box .table-box {
+    margin-bottom: 0;
+  }
+
+  .motor #content .body-box .con-box .table-box:first-child,
+  .inverter #content .body-box .con-box .table-box:first-child,
+  .motor #content .bot-box .con-box .table-box:first-child,
+  .inverter #content .bot-box .con-box .table-box:first-child {
+    margin-right: 20px;
+  }
+
+  .motor #content .bot-box .con-box .flex-wrap,
+  .inverter #content .bot-box .con-box .flex-wrap {
+    display: flex;
+  }
+
+  /*MOTOR/INVERTER 공통 css끝*/
+
+  /*MOTOR0100-테슬라제품포장등록*/
+  .motor0100 #content .con-box .btn-box .btn-search,
+  .inverter0100 #content .con-box .btn-box .btn-search {
+    margin-top: 0;
+  }
+
+  .motor0100 #content .head-box .con-box .input-text,
+  .inverter0100 #content .head-box .con-box .input-text {
+    margin-bottom: 0;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .motor0100 #content .bot-box .con-box .table-box,
+  .inverter0100 #content .bot-box .con-box .table-box,
+  .motor0101 #content .body-box .con-box .table-box,
+  .inverter0101 #content .body-box .con-box .table-box {
+    width: 50%;
+  }
+
+  .motor0101 #content .body-box .con-box .table-box,
+  .inverter0101 #content .body-box .con-box .table-box {
+    height: 100%;
+  }
+
+  .motor0100 .head-box .con-box>div,
+  .inverter0100 .head-box .con-box>div,
+  .manager0100 .head-box .con-box>div {
+    display: flex;
+  }
+
+  .motor0100 #content .head-box fieldset,
+  .inverter0100 #content .head-box fieldset {
+    width: calc(100% - 630px);
+  }
+
+  .motor0100 #content .head-box .search-list>div:last-child,
+  .inverter0100 #content .head-box .search-list>div:last-child {
+    width: 60%;
+  }
+
+  .manager0100 #content .head-box .user-box>div:last-child {
+    width: 60%;
+  }
+
+
+  .motor0100 #content .head-box .con-box .input-text input[type='text'],
+  .inverter0100 #content .head-box .con-box .input-text input[type='text'],
+  .manager0200 #content .head-box .con-box .input-text input[type='text'],
+  .manager0500 #content .head-box .con-box .input-text input[type='text'] {
+    width: 100%;
+    min-width: 250px;
+  }
+
+  .motor0100 #content .head-box .con-box .input-text .input-box-gap,
+  .inverter0100 #content .head-box .con-box .input-text .input-box-gap {
+    margin-right: 10px;
+  }
+
+  .system0100 #content .head-box .con-box .btn-box .btn-add,
+  .motor0100 #content .head-box .con-box .btn-box .btn-add,
+  .inverter0100 #content .head-box .con-box .btn-box .btn-add {
+    margin-bottom: 0;
+  }
+
+
+  /*MOTOR,INVERTER-0101*/
+  .motor0101 #content .table-wrap,
+  .inverter0101 #content .table-wrap {
+    justify-content: left;
+  }
+
+  .motor0101 #content .head-box .con-box .flex-wrap,
+  .inverter0101 #content .head-box .con-box .flex-wrap {
+    width: 100%;
+  }
+
+  .motor0101 #content .body-box .con-box .flex-wrap .input-text,
+  .inverter0101 #content .body-box .con-box .flex-wrap .input-text {
+    display: flex;
+  }
+
+  .motor0101 #content .body-box .con-box .flex-wrap .input-text label,
+  .inverter0101 #content .body-box .con-box .flex-wrap .input-text label {
+    line-height: 35px;
+    margin-right: 20px;
+  }
+
+
+
+  /*MOTOR-0200,0300*/
+  .motor0200 #content .con-box .user-box .input-text input,
+  .inverter0200 #content .con-box .user-box .input-text input,
+  .motor0300 #content .con-box .user-box .input-text input,
+  .inverter0300 #content .con-box .user-box .input-text input {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .motor0200 #content .head-box .con-box .flex-wrap,
+  .inverter0200 #content .head-box .con-box .flex-wrap,
+  .motor0300 #content .head-box .con-box .flex-wrap,
+  .inverter0300 #content .head-box .con-box .flex-wrap {
+    width: 100%;
+    display: flex;
+  }
+
+  .motor0200 #content .head-box .con-box .flex-wrap span,
+  .inverter0200 #content .head-box .con-box .flex-wrap span,
+  .motor0300 #content .head-box .con-box .flex-wrap span,
+  .inverter0300 #content .head-box .con-box .flex-wrap span {
+    width: 50%;
+  }
+
+  .motor0300 #content .head-box .con-box .flex-wrap span:last-child,
+  .inverter0300 #content .head-box .con-box .flex-wrap span:last-child {
+    margin-right: 20px;
+  }
+
+  /*가공추적조회,공정품질조회 인풋박스 사이즈 조절*/
+  .motor0200 #content .head-box .con-box .flex-wrap fieldset,
+  .inverter0200 #content .head-box .con-box .flex-wrap fieldset,
+  .motor0300 #content .head-box .con-box .flex-wrap fieldset,
+  .inverter0300 #content .head-box .con-box .flex-wrap fieldset {
+    width: calc(100% - 320px);
+  }
+
+  /*가공설비조회 인풋박스 사이즈 조절*/
+  .motor0400 #content .head-box .con-box fieldset,
+  .inverter0400 #content .head-box .con-box fieldset {
+    width: 60%;
+  }
+
+  .motor0400 #content .head-box .con-box fieldset input,
+  .inverter0400 #content .head-box .con-box fieldset input {
+    width: 100%;
+  }
+
+  .motor0200 #content .head-box .con-box .flex-wrap fieldset .user-box,
+  .inverter0200 #content .head-box .con-box .flex-wrap fieldset .user-box,
+  .motor0300 #content .head-box .con-box .flex-wrap fieldset .user-box,
+  .inverter0300 #content .head-box .con-box .flex-wrap fieldset .user-box {
+    width: 100%;
+  }
+
+  .motor0200 #content .head-box .con-box .flex-wrap .btn-box,
+  .inverter0200 #content .head-box .con-box .flex-wrap .btn-box,
+  .motor0300 #content .head-box .con-box .flex-wrap .btn-box,
+  .inverter0300 #content .head-box .con-box .flex-wrap .btn-box {
+    width: auto;
+    align-items: end;
+
+  }
+
+  .motor0200 #content .head-box .con-box .btn-box .btn-search,
+  .inverter0200 #content .head-box .con-box .btn-box .btn-search,
+  .motor0300 #content .head-box .con-box .btn-box .btn-search,
+  .inverter0300 #content .head-box .con-box .btn-box .btn-search {
+    margin-bottom: 0;
+  }
+
+  /*MOTOR-0300 공정품질조회*/
+
+  .motor0300 #content .head-box .con-box .flex-wrap span:last-child,
+  .inverter0300 #content .head-box .con-box .flex-wrap span:last-child {
+    padding-left: 20px;
+  }
+
+  .motor0300 #content .head-box .con-box .flex-wrap .btn-box span:last-child,
+  .inverter0300 #content .head-box .con-box .flex-wrap .btn-box span:last-child {
+    padding-left: 0px;
+  }
+
+  .motor0300 #content .head-box .con-box .metal-nub input,
+  .inverter0300 #content .head-box .con-box .metal-nub input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .motor0300 #content .con-box .user-box .input-text input:last-child,
+  .inverter0300 #content .con-box .user-box .input-text input:last-child {
+    margin-right: 0;
+  }
+
+
+  /*MOTOR-0400 가공설비조회*/
+
+  /*MOTOR-0500 마킹기정보 수동등록*/
+  .motor0500 #content .con-box .user-box .db-connect,
+  .inverter0500 #content .con-box .user-box .db-connect,
+  .manager0101 #content .con-box .user-box .db-connect,
+  .manager0400 #content .con-box .user-box .db-connect {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .motor0500 #content .con-box .user-box,
+  .inverter0500 #content .con-box .user-box,
+  .manager0101 #content .con-box .user-box,
+  .manager0400 #content .con-box .user-box {
+    width: 600px;
+    margin: 30px auto;
+    padding-top: 50px;
+  }
+
+  .motor0500 #content .con-box .input-text,
+  .inverter0500 #content .con-box .input-text,
+  .manager0101 #content .con-box .input-text,
+  .manager0400 #content .con-box .input-text {
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .motor0500 #content .con-box .input-text .motor-align-left,
+  .inverter0500 #content .con-box .input-text .motor-align-left,
+  .manager0101 #content .con-box .input-text .motor-align-left,
+  .manager0400 #content .con-box .input-text .motor-align-left {
+    width: 150px;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .motor0500 #content .con-box .input-text .motor-align-left label,
+  .inverter0500 #content .con-box .input-text .motor-align-left label,
+  .manager0101 #content .con-box .input-text .motor-align-left label,
+  .manager0400 #content .con-box .input-text .motor-align-left label {
+    justify-content: right;
+  }
+
+  .motor0500 #content .con-box .input-text .motor-align-right,
+  .inverter0500 #content .con-box .input-text .motor-align-right,
+  .manager0101 #content .con-box .input-text .motor-align-right,
+  .manager0400 #content .con-box .input-text .motor-align-right {
+    width: 400px;
+  }
+
+  .motor0500 #content .con-box .input-text .motor-align-right input,
+  .inverter0500 #content .con-box .input-text .motor-align-right input,
+  .manager0101 #content .con-box .input-text .motor-align-right input,
+  .manager0400 #content .con-box .input-text .motor-align-right input {
+    width: 100%;
+  }
+
+  .motor0500 #content .con-box .user-box .db-connect span,
+  .inverter0500 #content .con-box .user-box .db-connect span,
+  .manager0101 #content .con-box .user-box .db-connect span,
+  .manager0400 #content .con-box .user-box .db-connect span {
+    font-size: 1.6rem;
+  }
+
+  .motor0500 #content .con-box .btn-box,
+  .inverter0500 #content .con-box .btn-box,
+  .manager0101 #content .con-box .btn-box,
+  .manager0400 #content .con-box .btn-box {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .motor0500 #content .con-box .btn-box .btn-save,
+  .inverter0500 #content .con-box .btn-box .btn-save,
+  .manager0101 #content .con-box .btn-box .btn-save,
+  .manager0400 #content .con-box .btn-box .btn-save {
+    margin-bottom: 0;
+  }
+
+  .motor0500 #content .con-box .user-box .db-connect .radio-block-wrap,
+  .inverter0500 #content .con-box .user-box .db-connect .radio-block-wrap,
+  .manager0101 #content .con-box .user-box .db-connect .radio-block-wrap {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .motor0500 #content .con-box .user-box .db-connect label,
+  .inverter0500 #content .con-box .user-box .db-connect label,
+  .manager0101 #content .con-box .user-box .db-connect label {
+    margin-right: 80px;
+  }
+
+  .motor0500 #content .con-box .user-box .db-connect span,
+  .inverter0500 #content .con-box .user-box .db-connect span,
+  .manager0101 #content .con-box .user-box .db-connect span {
+    font-size: 1.4rem;
+  }
+
+  /*manager0100-후공정ng관리*/
+  .manager0100 #content .head-box .con-box .input-text {
+    margin-bottom: 0;
+  }
+
+  .manager0100 #content .head-box .con-box fieldset {
+    width: 60%;
+  }
+
+  .manager0100 #content .head-box .con-box fieldset .user-box {
+    display: flex;
+  }
+
+  .manager0100 #content .head-box .con-box fieldset .input-text input {
+    width: 100%;
+  }
+
+  .manager0100 #content .head-box .con-box fieldset .input-text:first-child {
+    margin-right: 20px;
+  }
+
+  .manager0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+
+  .manager0100 #content .head-box .con-box .btn-box {
+    margin: 0;
+  }
+
+
+  .manager0100 #content .bot-box .con-box .flex-wrap {
+    display: flex;
+  }
+
+  .manager0100 #content .bot-box .con-box .flex-wrap>div:first-child {
+    margin-right: 20px;
+  }
+
+  .manager0100 #content .bot-box .con-box .table-box {
+    margin-bottom: 0;
+  }
+
+  .manager0100 #content .bot-box .con-box .table-title-wrap .btn-ok {
+    padding-right: 10px;
+  }
+
+  .manager0100 .head-box .con-box .material-serial {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  /*manager0200-마스터모드설정 */
+
+  .manager0200 #content .head-box .user-box {
+    display: flex;
+  }
+
+  .manager0200 #content .head-box .user-box .db-connect,
+  .manager0300 #content .head-box .user-box .db-connect {
+    margin-top: 0;
+    line-height: 35px;
+    padding-left: 20px;
+    white-space: nowrap;
+  }
+
+  .manager0200 #content .head-box .btn-wrap {
+    margin-top: 20px;
+  }
+
+  .manager0200 #content .con-box .user-box .db-connect {
+    margin-bottom: 0;
+  }
+
+  .manager0200 #content .con-box .user-box .input-text {
+    margin-bottom: 0;
+  }
+
+  .manager0200 #content .head-box fieldset,
+  .manager0500 #content .head-box fieldset {
+    width: calc(100% - 630px);
+  }
+
+  .manager0200 #content .head-box .search-list>div:last-child {
+    width: 60%;
+  }
+
+  .manager0200 #content .head-box .user-box>div:first-child,
+  .manager0500 #content .head-box .user-box>div:first-child {
+    width: 60%;
+  }
+
+  /*manager0300-소재 재투입 횟수 설정 */
+  .manager0300 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+
+  .manager0300 #content .head-box .con-box .db-connect {
+    margin-bottom: 0;
+  }
+
+  .manager0300 #content .head-box .con-box .btn-box {
+    margin: 0;
+  }
+
+  .manager0300 #content .head-box .con-box .btn-box .btn-save {
+    margin-bottom: 0;
+  }
+
+  .manager0300 #content .head-box .con-box .btn-box .btn-search {
+    margin-top: 0;
+  }
+
+  /*manager0500 */
+  .manager0500 #content .head-box .user-box {
+    display: flex;
+  }
+
+  .manager0500 #content .head-box .con-box .btn-box .btn-reset {
+    margin-bottom: 0;
+  }
+
+  .manager0500 #content .head-box .con-box .input-text {
+    margin-bottom: 0;
+  }
+
+  .manager0500 #content .head-box .user-box .db-connect {
+    margin-bottom: 0;
+    white-space: nowrap;
+    line-height: 35px;
+  }
+
+
+
+  /*sub-page 끝*/
+
+  /*login.html 시작*/
+  .login-bg .fnc-slide__content {
+    left: 5%;
+    top: 20%;
+  }
+
+  .login-bg .fnc-slide__heading-line {
+    display: block;
+  }
+
+  .login-bg .fnc-slide__heading-line:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  /*추가 텍스트 패딩으로 위치변경*/
+  .login-bg .fnc-slide__heading-line:nth-child(3) {
+    padding-left: 40px;
+  }
+
+  /*추가 텍스트 패딩으로 위치변경*/
+  .login-bg .fnc-slide__heading-line {
+    font-size: 3.0rem;
+    text-shadow: 0 0 10px #000000;
+    font-family: 'Line Seed KR';
+  }
+
+  .login-bg .fnc-slide__heading-line:last-child {
+    font-size: 1.5rem;
+  }
+
+  .login-wrap .login-box {
+    max-width: 350px;
+  }
+
+  .login-wrap .login-box .flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 35px;
+  }
+
+  .login-wrap .login-box .login-save {
+    margin-bottom: 30px;
+  }
+
+  .login-wrap .img-box {
+    width: 130px;
+  }
+
+  /*login.html 끝*/
+
+  /*main.html 시작*/
+  .main-txt-box {
+    font-size: 6.4rem;
+  }
+
+  .main-txt-box p span {
+    display: inline;
+    margin-bottom: 35px;
+  }
+
+  .manager0200 #content .head-box .con-box .btn-wrap {
+    margin-top: 0px;
+  }
+
+  /*main.html 끝*/
+
+}
+
+
+/*노트북 끝*/
+
+/*반응형오류 추가*/
+@media screen and (min-width: 1469px) {
+  .motor0100 #content .head-box .con-box .btn-flex-wrap,
+  .inverter0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1284px) {
+  .system0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+
+  .system0100 #content .head-box .con-box {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1294px) {
+  .manager0200 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1398px) {
+  .manager0500 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1212px) {
+
+  #wrap.en:not().manager0200 #content .head-box .con-box .btn-wrap {
+    margin: 20px auto 0;
+  }
+
+  #wrap.en:not().manager0200 #content .head-box .con-box .btn-wrap {
+    margin-top: 20px;
+  }
+
+
+}
+
+
+/*대형PC 시작*/
+@media screen and (min-width: 1920px) {
+
+  /*header 시작*/
+  header h1 {
+    width: 150px;
+  }
+
+  header .toggle-box {
+    padding-top: 12px;
+    margin-left: 0px;
+    transform: scale(1);
+  }
+
+  header nav .gnb-pc>ul>li {
+    padding: 18px 20px;
+  }
+
+  header nav .gnb-pc>ul>li:nth-of-type(2),
+  header nav .gnb-pc>ul>li:nth-of-type(3) {
+    padding: 18px 20px;
+  }
+
+  header nav .gnb-pc h2 {
+    font-size: 2.0rem;
+    font-weight: 700;
+  }
+
+  header nav .gnb-pc h2 span {
+    display: inline;
+  }
+
+  header nav .gnb-pc .depth02 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  header nav .gnb-pc .depth02 li {
+    font-size: 2.0rem;
+    margin-bottom: 15px;
+  }
+
+  header nav .gnb-pc .hover-box {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  header nav .gnb-pc .hover-box div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: all 0.5s;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(1) {
+    top: 5px;
+    left: 0;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(2) {
+    top: 0;
+    right: 5px;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(3) {
+    bottom: 5px;
+    right: 0px;
+  }
+
+  header nav .gnb-pc .hover-box div:nth-child(4) {
+    bottom: 0px;
+    left: 5px;
+  }
+
+  header nav .gnb-pc .hover-box.on div:nth-child(2n - 1) {
+    width: 100%;
+    height: 2px;
+  }
+
+  header nav .gnb-pc .hover-box.on div:nth-child(2n) {
+    width: 2px;
+    height: 100%;
+  }
+
+  /*header 끝*/
+
+
+  /*sub page 시작*/
+
+
+  /*공통 css 시작*/
+  #content .head-box .con-box .btn-wrap {
+    margin: 0;
+  }
+
+  #content .head-box .con-box .btn-box .btn-search {
+    margin-top: 0;
+  }
+
+  /*공통 css 끝*/
+
+  /*system0101 시작*/
+  .system0101 #content .con-box .flex-wrap {
+    padding: 0 400px;
+    display: flex;
+    gap: 60px;
+  }
+
+  /*system0101 끝*/
+
+  /*system0401 시작*/
+  .system0401 .version-flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 400px;
+  }
+
+  /*system0401 끝*/
+
+
+
+
+
+
+  /*sub page 끝*/
+
+  /*login.html 시작*/
+  .login-bg .fnc-slide__content {
+    left: 5%;
+    top: 10%;
+  }
+
+  .login-bg .fnc-slide__heading-line:nth-child(2) {
+    padding-left: 40px;
+  }
+
+  /*추가 텍스트 패딩으로 위치변경*/
+  .login-bg .fnc-slide__heading-line:nth-child(3) {
+    padding-left: 80px;
+  }
+
+  /*추가 텍스트 패딩으로 위치변경*/
+  .login-bg .fnc-slide__heading-line {
+    font-size: 9.6rem;
+  }
+
+  .login-bg .fnc-slide__heading-line:last-child {
+    font-size: 3.0rem;
+  }
+
+  .login-wrap .login-box {
+    padding: 80px 20px 40px;
+  }
+
+  .login-wrap .login-box .login-save {
+    margin-bottom: 70px;
+  }
+
+  .login-wrap .img-box {
+    width: 160px;
+  }
+
+  /*login.html 끝*/
+
+  /*main.html 시작*/
+  .main-txt-box {
+    font-size: 6.4rem;
+  }
+
+  .main-txt-box p span {
+    display: inline;
+    margin-bottom: 40px;
+  }
+
+  /*main.html 끝*/
+}
+
+/*대형PC 끝*/

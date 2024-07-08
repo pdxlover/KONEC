@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="monitoring">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>[INVERTER] Work Environment Settings</title>
+  <link rel="icon" type="image/png" sizes="48x48" href="../img/picture/favicon.png">
+  <link rel="stylesheet" href="../css/import.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="monitoring monitoring0101 setting light en bg-color-monitor">
+    <header class="color-03 bg-color-11">
+      <div class="left-box">
+        <div class="btn-box">
+          <div class="btn-txt_close"><a href="monitoring0100.html"><button type="button"><span class="color-03">Exit</span></button></a></div>
+        </div><!--.btn-box-->
+        <div class="title-box">
+          <h1>MORTOR monitoring</h1>
+        </div><!--.title-box-->
+      </div><!--.left-box-->
+      <div class="right-box">
+        <div class="ct-box color-03">
+          <div>C/T: <span>000</span>sec</div>
+        </div><!--.ct-box-->
+        <div class="time-box color-03">
+          <div>INPUT: <span>00.00</span>HR</div>
+        </div><!--.time-box-->
+        <div class="clock-box">
+          <div class="color-03"><span>16:40:01</span></div>
+        </div><!--.clock-box-->
+      </div><!--.right-box-->
+    </header>
+    <section>
+      <div class="title-box color-03">
+        <h2>Work Environment Settings</h2>
+      </div>
+      <div class="con-box bg-color-12">
+        <div class="inner">
+          <div class="ct-box">
+            <div class="input-text ct-setting">
+              <div>
+                <span>1.&nbsp;</span><label for="ct-setting">C/T SETTING</label>
+              </div>
+              <div>
+                <input type="text" placeholder="Enter Number Here..." id="ct-setting"><span>sec</span>
+              </div>
+            </div><!--.ct-setting-->
+          </div><!--.ct-box-->
+          <div class="time-box">
+            <div>2. JOB TIME ON/OFF SETTING</div>
+            <div class="table-box">
+              <table>
+                <thead>
+                  <tr class="color-03 bg-color-09">
+                    <th>NO</th>
+                    <th>Day</th>
+                    <th colspan="2">ON/OFF</th>
+                    <th>Night</th>
+                    <th colspan="2">ON/OFF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>08:00 ~ 09:00</td>
+                    <td><input type="radio" id="time-0800-on" name="time-0800" checked="checked"><label for="time-0800-on">ON</label></td>
+                    <td><input type="radio" id="time-0800-off" name="time-0800"><label for="time-0800-off">OFF</label></td>
+                    <td>20:00 ~ 21:00</td>
+                    <td><input type="radio" id="time-2000-on" name="time-2000" checked="checked"><label for="time-2000-on">ON</label></td>
+                    <td><input type="radio" id="time-2000-off" name="time-2000"><label for="time-2000-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>09:00 ~ 10:00</td>
+                    <td><input type="radio" id="time-0900-on" name="time-0900" checked="checked"><label for="time-0900-on">ON</label></td>
+                    <td><input type="radio" id="time-0900-off" name="time-0900"><label for="time-0900-off">OFF</label></td>
+                    <td>21:00 ~ 22:00</td>
+                    <td><input type="radio" id="time-2100-on" name="time-2100" checked="checked"><label for="time-2100-on">ON</label></td>
+                    <td><input type="radio" id="time-2100-off" name="time-2100"><label for="time-2100-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>10:00 ~ 10:10 (10m)</td>
+                    <td><input type="radio" id="time-1000-on" name="time-1000" checked="checked"><label for="time-1000-on">ON</label></td>
+                    <td><input type="radio" id="time-1000-off" name="time-1000"><label for="time-1000-off">OFF</label></td>
+                    <td>22:00 ~ 22:10 (10m)</td>
+                    <td><input type="radio" id="time-2200-on" name="time-2200" checked="checked"><label for="time-2200-on">ON</label></td>
+                    <td><input type="radio" id="time-2200-off" name="time-2200"><label for="time-2200-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>10:10 ~ 11:00 (50m)</td>
+                    <td><input type="radio" id="time-1010-on" name="time-1010" checked="checked"><label for="time-1010-on">ON</label></td>
+                    <td><input type="radio" id="time-1010-off" name="time-1010"><label for="time-1010-off">OFF</label></td>
+                    <td>22:10 ~ 23:00 (50m)</td>
+                    <td><input type="radio" id="time-2210-on" name="time-2210" checked="checked"><label for="time-2210-on">ON</label></td>
+                    <td><input type="radio" id="time-2210-off" name="time-2210"><label for="time-2210-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>11:00 ~ 12:00</td>
+                    <td><input type="radio" id="time-1100-on" name="time-1100" checked="checked"><label for="time-1100-on">ON</label></td>
+                    <td><input type="radio" id="time-1100-off" name="time-1100"><label for="time-1100-off">OFF</label></td>
+                    <td>00:00 ~ 01:00</td>
+                    <td><input type="radio" id="time-0000-on" name="time-0000" checked="checked"><label for="time-0000-on">ON</label></td>
+                    <td><input type="radio" id="time-0000-off" name="time-0000"><label for="time-0000-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>12:00 ~ 12:30 (30m)</td>
+                    <td><input type="radio" id="time-1200-on" name="time-1200" checked="checked"><label for="time-1200-on">ON</label></td>
+                    <td><input type="radio" id="time-1200-off" name="time-1200"><label for="time-1200-off">OFF</label></td>
+                    <td>01:00 ~ 01:30 (30m)</td>
+                    <td><input type="radio" id="time-0100-on" name="time-0100" checked="checked"><label for="time-0100-on">ON</label></td>
+                    <td><input type="radio" id="time-0100-off" name="time-0100"><label for="time-0100-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>12:30 ~ 13:00 (30m)</td>
+                    <td><input type="radio" id="time-1230-on" name="time-1230" checked="checked"><label for="time-1230-on">ON</label></td>
+                    <td><input type="radio" id="time-1230-off" name="time-1230"><label for="time-1230-off">OFF</label></td>
+                    <td>01:30 ~ 02:00 (30m)</td>
+                    <td><input type="radio" id="time-0130-on" name="time-0130" checked="checked"><label for="time-0130-on">ON</label></td>
+                    <td><input type="radio" id="time-0130-off" name="time-0130"><label for="time-0130-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>13:00 ~ 14:00</td>
+                    <td><input type="radio" id="time-1300-on" name="time-1300" checked="checked"><label for="time-1300-on">ON</label></td>
+                    <td><input type="radio" id="time-1300-off" name="time-1300"><label for="time-1300-off">OFF</label></td>
+                    <td>02:00 ~ 03:00</td>
+                    <td><input type="radio" id="time-0200-on" name="time-0200" checked="checked"><label for="time-0200-on">ON</label></td>
+                    <td><input type="radio" id="time-0200-off" name="time-0200"><label for="time-0200-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>14:00 ~ 15:00</td>
+                    <td><input type="radio" id="time-1400-on" name="time-1400" checked="checked"><label for="time-1400-on">ON</label></td>
+                    <td><input type="radio" id="time-1400-off" name="time-1400"><label for="time-1400-off">OFF</label></td>
+                    <td>03:00 ~ 04:00</td>
+                    <td><input type="radio" id="time-0300-on" name="time-0300" checked="checked"><label for="time-0300-on">ON</label></td>
+                    <td><input type="radio" id="time-0300-off" name="time-0300"><label for="time-0300-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>15:00 ~ 15:10 (10m)</td>
+                    <td><input type="radio" id="time-1500-on" name="time-1500" checked="checked"><label for="time-1500-on">ON</label></td>
+                    <td><input type="radio" id="time-1500-off" name="time-1500"><label for="time-1500-off">OFF</label></td>
+                    <td>04:00 ~ 04:10 (10m)</td>
+                    <td><input type="radio" id="time-0400-on" name="time-0400" checked="checked"><label for="time-0400-on">ON</label></td>
+                    <td><input type="radio" id="time-0400-off" name="time-0400"><label for="time-0400-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>15:10 ~ 16:00 (50m)</td>
+                    <td><input type="radio" id="time-1510-on" name="time-1510" checked="checked"><label for="time-1510-on">ON</label></td>
+                    <td><input type="radio" id="time-1510-off" name="time-1510"><label for="time-1510-off">OFF</label></td>
+                    <td>04:10 ~ 05:00 (50m)</td>
+                    <td><input type="radio" id="time-0410-on" name="time-0410" checked="checked"><label for="time-0410-on">ON</label></td>
+                    <td><input type="radio" id="time-0410-off" name="time-0410"><label for="time-0410-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>16:00 ~ 17:00</td>
+                    <td><input type="radio" id="time-1600-on" name="time-1600" checked="checked"><label for="time-1600-on">ON</label></td>
+                    <td><input type="radio" id="time-1600-off" name="time-1600"><label for="time-1600-off">OFF</label></td>
+                    <td>05:00 ~ 06:00</td>
+                    <td><input type="radio" id="time-0500-on" name="time-0500" checked="checked"><label for="time-0500-on">ON</label></td>
+                    <td><input type="radio" id="time-0500-off" name="time-0500"><label for="time-0500-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>17:00 ~ 17:30 (30m)</td>
+                    <td><input type="radio" id="time-1700-on" name="time-1700" checked="checked"><label for="time-1700-on">ON</label></td>
+                    <td><input type="radio" id="time-1700-off" name="time-1700"><label for="time-1700-off">OFF</label></td>
+                    <td>06:00 ~ 06:30 (30m)</td>
+                    <td><input type="radio" id="time-0600-on" name="time-0600" checked="checked"><label for="time-0600-on">ON</label></td>
+                    <td><input type="radio" id="time-0600-off" name="time-0600"><label for="time-0600-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>17:30 ~ 18:00 (30m)</td>
+                    <td><input type="radio" id="time-1730-on" name="time-1730" checked="checked"><label for="time-1730-on">ON</label></td>
+                    <td><input type="radio" id="time-1730-off" name="time-1730"><label for="time-1730-off">OFF</label></td>
+                    <td>06:30 ~ 07:00 (30m)</td>
+                    <td><input type="radio" id="time-0630-on" name="time-0630" checked="checked"><label for="time-0630-on">ON</label></td>
+                    <td><input type="radio" id="time-0630-off" name="time-0630"><label for="time-0630-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>18:00 ~ 19:00</td>
+                    <td><input type="radio" id="time-1800-on" name="time-1800" checked="checked"><label for="time-1800-on">ON</label></td>
+                    <td><input type="radio" id="time-1800-off" name="time-1800"><label for="time-1800-off">OFF</label></td>
+                    <td>07:00 ~ 08:00</td>
+                    <td><input type="radio" id="time-0700-on" name="time-0700" checked="checked"><label for="time-0700-on">ON</label></td>
+                    <td><input type="radio" id="time-0700-off" name="time-0700"><label for="time-0700-off">OFF</label></td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>19:00 ~ 20:00</td>
+                    <td><input type="radio" id="time-1900-on" name="time-1900" checked="checked"><label for="time-1900-on">ON</label></td>
+                    <td><input type="radio" id="time-1900-off" name="time-1900"><label for="time-1900-off">OFF</label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--.table-box-->
+          </div><!--.time-box-->
+          <div class="btn-box">
+            <div class="btn btn-save"><button type="button"><span>SAVE</span></button></div>
+          </div><!--.btn-box-->
+        </div><!--.inner-->
+      </div><!--.con-box-->
+    </section>
+  </div><!--#wrap-->
+</body>
+
+</html>

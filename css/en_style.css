@@ -1,0 +1,432 @@
+/*layout 시작*/
+
+/*monitoring 시작*/
+#wrap.en.monitoring.setting section .title-box::after {
+  width: 60%;
+}
+
+/*monitoring 끝*/
+
+
+/*노트북 시작*/
+@media screen and (min-width: 1024px) {
+
+  /*header 시작*/
+  #wrap.en header nav .gnb-pc .dim {
+    height: 350px;
+  }
+
+  /*header 끝*/
+}
+
+@media screen and (min-width: 1440px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring.setting section .title-box::after {
+    width: 63%;
+  }
+
+  /*monitoring 끝*/
+
+
+}
+
+@media screen and (min-width: 1920px) {
+
+  /*header 시작*/
+  #wrap.en header nav .gnb-pc .dim {
+    height: 400px;
+  }
+
+  /*header 끝*/
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring.setting section .title-box::after {
+    width: 68%;
+  }
+
+  /*monitoring 끝*/
+
+
+}
+
+/*layout 끝*/
+
+/*common 시작*/
+#wrap.en .btn-ok button span {
+  transform: translate(-50%, -50%) scale(0.75);
+}
+
+/*common 끝*/
+
+
+
+
+
+
+
+
+/*content 시작*/
+
+#wrap.en #content>.title-box h3 {
+  line-height: 1;
+}
+
+
+/*monitoring 시작*/
+#wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p {
+  font-size: 1.0rem;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+  font-size: 1.0rem;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p span:first-child:after {
+  content: "-";
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+  font-size: 1.0rem;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+  font-size: 1.0rem;
+}
+
+#wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+/*monitoring 끝*/
+
+/*footer 시작*/
+#wrap.en footer .user p {
+  text-wrap: nowrap;
+}
+
+@media screen and (min-width: 600px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 1.3rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 1.0rem;
+  }
+
+  /*monitoring 끝*/
+}
+
+@media screen and (min-width: 700px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 1.4rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 1.0rem;
+  }
+
+  /*monitoring 끝*/
+}
+
+
+@media screen and (min-width: 800px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 1.6rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 1.2rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p span {
+    display: inline;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p span:first-child::after {
+    display: none;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 1.0rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p span{
+    line-height: 1.4;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p br {
+    display: none;
+  }
+
+  /*monitoring 끝*/
+}
+
+@media screen and (min-width: 900px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p,
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 2.1rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 1.4rem;
+  }
+
+
+  /*monitoring 끝*/
+}
+
+
+/*footer 끝*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /*footer 시작*/
+  #wrap.en footer .right div:first-child p:first-child {
+    display: none;
+  }
+
+  /*footer 끝*/
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  #content>.title-box h3 {
+    line-height: 1.4;
+  }
+
+  /*header 시작*/
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(1),
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(2),
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(3) {
+    padding: 12px 20px;
+  }
+
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(1) h2,
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(2) h2,
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(3) h2 {
+    font-size: 1.3rem;
+  }
+
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(5) h2 {
+    font-size: 1.55rem;
+  }
+
+  /*header 끝*/
+
+  #wrap.en.motor0100 #content .head-box .con-box .btn-flex-wrap {
+    margin-top: 20px auto 0;
+
+  }
+}
+
+@media screen and (min-width: 1044px) {
+
+  /*header 시작*/
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(5) h2 {
+    font-size: 1.6rem;
+  }
+
+  /*header 끝*/
+
+}
+
+@media screen and (min-width: 1232px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p {
+    font-size: 2.0rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 1.9rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 1.5rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 2.2rem;
+  }
+
+  /*monitoring 끝*/
+}
+
+@media screen and (min-width: 1440px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p {
+    font-size: 2.6rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 2.4rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 1.8rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 2.7rem;
+  }
+
+  /*monitoring 끝*/
+}
+
+@media screen and (min-width: 1680px) {
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p {
+    font-size: 2.9rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 2.8rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 2.1rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 3.0rem;
+  }
+
+  /*monitoring 끝*/
+}
+
+@media screen and (min-width: 1920px) {
+
+  /*header 시작*/
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(1),
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(2),
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(3) {
+    padding: 20px 20px;
+  }
+
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(1) h2,
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(2) h2,
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(3) h2 {
+    font-size: 1.7rem;
+  }
+
+  #wrap.en header nav .gnb-pc>ul>li:nth-of-type(5) h2 {
+    font-size: 2.0rem;
+  }
+
+  /*header 끝*/
+
+  /*monitoring 시작*/
+  #wrap.en.monitoring #count-wrap li:nth-child(2) .title-box p {
+    font-size: 3.4rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(4) .title-box p {
+    font-size: 3.3rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(5) .title-box p {
+    font-size: 2.4rem;
+  }
+
+  #wrap.en.monitoring #count-wrap li:nth-child(7) .title-box p {
+    font-size: 3.6rem;
+  }
+
+  /*monitoring 끝*/
+
+}
+
+/*content 끝*/
+@media screen and (min-width: 1284px) {
+  #wrap.en.system0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 20px auto 0;
+  }
+  #wrap.en.system0100 #content .head-box .con-box {
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 1375px) {
+  #wrap.en.system0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+  #wrap.en.system0100 #content .head-box .con-box {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1469px){
+  #wrap.en.motor0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 20px auto 0;
+  }
+  #wrap.en.inverter0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 20px auto 0;
+  }
+}
+@media screen and (min-width: 1278px){
+  #wrap.en.manager0200 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1398px){
+  #wrap.en.manager0500 #content .head-box .con-box .btn-flex-wrap {
+    margin: 20px auto 0;
+  }
+}
+@media screen and (min-width: 1508px) {
+  #wrap.en.motor0100 #content .head-box .con-box .btn-flex-wrap,
+  #wrap.en.inverter0100 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1434px) {
+  #wrap.en.manager0500 #content .head-box .con-box .btn-flex-wrap {
+    margin: 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1352px) {
+
+  #wrap.en.manager0500 #content .head-box .con-box .btn-wrap {
+    margin-top: 20px;
+  }
+
+}
+
